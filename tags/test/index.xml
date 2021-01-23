@@ -13,7 +13,7 @@
       
       <guid>https://hattomo.github.io/posts/my-first-post/</guid>
       <description>Android
-int sum; for (int i = 0, i&amp;lt;10, i++){ sum += 1; } kkk
+int sum; for (int i = 0, i&amp;lt;10, i++){ sum += 1; } package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } kkk
 行をあけないと
 $\int_{a}^{b} x^2 dx$
 $$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$
