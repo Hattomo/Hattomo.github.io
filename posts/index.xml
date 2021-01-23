@@ -7,19 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 23 Jan 2021 11:44:54 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>My First Post &amp; Test</title>
       <link>https://hattomo.github.io/posts/my-first-post/</link>
       <pubDate>Sat, 23 Jan 2021 11:44:54 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/my-first-post/</guid>
-      <description>Android
-int sum; for (int i = 0, i&amp;lt;10, i++){ sum += 1; } package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } kkk
-行をあけないと
+      <description>Hello! World
+int sum; for (int i = 0, i&amp;lt;10, i++){ sum += 1; } package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } 行をあけないと
 $\int_{a}^{b} x^2 dx$
 $$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$
- YouTube     Tweet  test
-&amp;mdash; Twitter (@Twitter) February 7, 2020   Gist  ↓↓↓
-  iii    A B     O P      ⬅ Return </description>
+ YouTube     Tweet  A new study shows that the seven TRAPPIST-1 planets — the largest group of Earth-size planets ever found in a single stellar system — all have similar densities. How these findings provide clues to the planets&amp;#39; composition: https://t.</description>
     </item>
     
   </channel>
