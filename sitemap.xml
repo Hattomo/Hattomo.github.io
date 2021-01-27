@@ -18,21 +18,6 @@
   </url>
   
   <url>
-    <loc>https://hattomo.github.io/posts/my-first-post/</loc>
-    <lastmod>2021-01-23T11:44:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hattomo.github.io/tags/</loc>
-    <lastmod>2021-01-23T11:44:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hattomo.github.io/tags/test/</loc>
-    <lastmod>2021-01-23T11:44:54+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hattomo.github.io/archives/</loc>
   </url>
   
@@ -42,6 +27,10 @@
   
   <url>
     <loc>https://hattomo.github.io/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hattomo.github.io/tags/</loc>
   </url>
   
 </urlset>
