@@ -22,14 +22,5 @@ hugo new posts/{path to new file}.md Hugo ローカルサーバーを立ち上�
 Reference  https://gohugo.io/getting-started/quick-start/ https://github.com/adityatelange/hugo-PaperMod  </description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>https://hattomo.github.io/posts/about/</link>
-      <pubDate>Sun, 24 Jan 2021 11:44:54 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/about/</guid>
-      <description>Who are you ? I am a student in University. I ❤️ Python, Flutter, VSCode, Machine Learning.</description>
-    </item>
-    
   </channel>
 </rss>
