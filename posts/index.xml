@@ -18,7 +18,7 @@ gitのサブモジュールに登録します。
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1 git submodule update --init --recursive 今後テーマをアップデートするためには、以下のコマンドを実行します。
 git submodule update --remote --merge 新規記事を作成する 以下のコマンドを実行します。
 hugo new posts/{path to new file}.md Hugo ローカルサーバーを立ち上げる hugo server -D テーマを編集する テーマをフォークし、次のような変更を行いました(行う予定です)。
- 文字サイズの変更 google analytics の追加 klatexのサポート 前回の記事、次の記事へのリンクの追加  GitHubにpushしたらdeployが行われるよう設定する GitHub actionを利用して、自動的にgithub-pagesにdeployが行われるように設定します。 peaceiris/actions-hugo@v2とpeaceiris/actions-gh-pages@v3を利用しました。
+ 文字サイズの変更 google analytics の追加 klatexのサポート Syntax Highlightingの設定 前回の記事、次の記事へのリンクの追加  GitHubにpushしたらdeployが行われるよう設定する GitHub actionを利用して、自動的にgithub-pagesにdeployが行われるように設定します。 peaceiris/actions-hugo@v2とpeaceiris/actions-gh-pages@v3を利用しました。
 Reference  https://gohugo.io/getting-started/quick-start/ https://github.com/adityatelange/hugo-PaperMod  </description>
     </item>
     
