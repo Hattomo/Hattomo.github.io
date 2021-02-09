@@ -5,7 +5,17 @@
     <link>https://hattomo.github.io/categories/computer/</link>
     <description>Recent content in computer on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Jan 2021 13:33:06 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Feb 2021 00:48:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Usage of Python Venv</title>
+      <link>https://hattomo.github.io/posts/210210-python-venv/</link>
+      <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/210210-python-venv/</guid>
+      <description>Python Environment Python便利なコマンドのメモです。
+venv # if you do not have venv # linux $ sudo apt install python3-venv # create virtual environment $ python3 -m venv [/path/to/new/virtual/environment] # activate $ cd [environment name] $ source [environment name]/bin/activate # deactivate $ deactivate Module input &amp;amp; output $ pip3 freeze &amp;gt; requirements.txt $ pip3 install -r requirements.txt Install and Run Jupyter Notebook # install $ pip3 install jupyter #Run $ jupyter notebook # or $ python3 -m notebook # After seconds, Press Ctrl+C to show URL OpenCV # install $ pip3 install opencv-python # python # useage import cv2 </description>
+    </item>
+    
     <item>
       <title>How to install and use Hugo</title>
       <link>https://hattomo.github.io/posts/210127-howtousehugo/</link>
