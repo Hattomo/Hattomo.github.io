@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Hattomo</title>
+    <link>https://hattomo.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on Hattomo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Feb 2021 10:41:23 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCodeのデフォルトフォントを確認する方法</title>
+      <link>https://hattomo.github.io/posts/21/q1/0213-vscodedefaultfont/</link>
+      <pubDate>Sat, 13 Feb 2021 10:41:23 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0213-vscodedefaultfont/</guid>
+      <description>はじめに MicrosoftのVSCodeでデフォルトのフォントを確認する方法です。先日、このサイトのほかのページにコードを書いたところ、macOSではきれいに表示されていましたが、Windowsでは汚いフォントで表示されていました。もちろんCSSをいじってFont-Familyを設定すればいいわけですが、どれを設定すればいいかわからない！ってことでVSCodeのデフォルトのフォントと同じフォントを設定すればきれいではないかと思い調べました。
+方法 シンプルにソースコードを見に行くのが早いでしょう(たぶん)。ソースコードは、GitHubのmicrosoft/vscodeで公開されており、そのなかでフォントを指定している部分はここです。27~29行目を見ると、以下のような記述があります。
+.mac { --monaco-monospace-font: &amp;#34;SF Mono&amp;#34;, Monaco, Menlo, Courier, monospace; } .windows { --monaco-monospace-font: Consolas, &amp;#34;Courier New&amp;#34;, monospace; } .linux { --monaco-monospace-font: &amp;#34;Ubuntu Mono&amp;#34;, &amp;#34;Liberation Mono&amp;#34;, &amp;#34;DejaVu Sans Mono&amp;#34;, &amp;#34;Courier New&amp;#34;, monospace; } どうやら、OSによって異なるフォントを使っているようです。macOSではSF Mono、WindowsではConsolas、LinuxではUbuntu Monoのようです。Linuxの最初がUbuntu Monoなので、LinuxでVSCodeを利用する人は、Ubuntuが一番多そうです。このサイトのCSSにも、これらのフォントを指定しておきました。</description>
+    </item>
+    
+  </channel>
+</rss>

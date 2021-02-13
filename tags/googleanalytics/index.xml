@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on Hattomo</title>
-    <link>https://hattomo.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on Hattomo</description>
+    <title>googleanalytics on Hattomo</title>
+    <link>https://hattomo.github.io/tags/googleanalytics/</link>
+    <description>Recent content in googleanalytics on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 11:48:30 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 11:48:30 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/googleanalytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでGoogle Analytics 4を利用する</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</link>
@@ -18,22 +18,6 @@ IDが取得出来たら、Hugoのフォルダtheme/layoutの適当なところ�
  analytics-gtag.html  &amp;lt;!-- Global site tag (gtag.js) - Google Analytics 4--&amp;gt; &amp;lt;script async src=&amp;#34;https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag(&amp;#39;js&amp;#39;, new Date()); gtag(&amp;#39;config&amp;#39;, &amp;#39;{{ .Site.GoogleAnalytics }}&amp;#39;); &amp;lt;/script&amp;gt; 次に、configファイルに移動し、GoogleAnalyticsのIDを設定します。ymlの場合は、以下のようになります。
 GoogleAnalytics:G-xxxxxxxx最後にこれらの設定を読み込みます。theme/layouts/partials/head.htmlのファイルの一番下のほうにある外部ファイルの読み込みを修正します。google_analytics_asyncは従来のgoogle analyticsなので消します。逆に、先ほど作成したファイルのパスを下のように追記します。
 ～省略～ {{- template &amp;#34;_internal/google_analytics_async.html&amp;#34; . }} &amp;lt;!--Delete--&amp;gt; {{- template &amp;#34;{path to file}/analytics-gtag.html&amp;#34; . }} &amp;lt;!--Add GA4--&amp;gt; {{- template &amp;#34;_internal/google_news.html&amp;#34; . }} {{- template &amp;#34;partials/templates/opengraph.</description>
-    </item>
-    
-    <item>
-      <title>How to install and use Hugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</link>
-      <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</guid>
-      <description>Hugo をインストールする homebrewを利用した方法が、一般的なようでしたが、Install hugoを参考にGitHubからバイナリをダウンロードし、解凍したhugoの実行ファイルを/usr/local/binに配置しました。
-テーマを決める テーマは少し迷いましたが、hugo-PaperModにしました。開発が活発に続けられていたこと、ドキュメントが整備されていたこと、デザインが気に入ったためです。
-gitのサブモジュールに登録します。
-git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1 git submodule update --init --recursive 今後テーマをアップデートするためには、以下のコマンドを実行します。
-git submodule update --remote --merge 新規記事を作成する 以下のコマンドを実行します。
-hugo new posts/{path to new file}.md Hugo ローカルサーバーを立ち上げる hugo server -D テーマを編集する テーマをフォークし、次のような変更を行いました(行う予定です)。
- 文字サイズの変更 google analytics の追加 klatexのサポート Syntax Highlightingの設定 前回の記事、次の記事へのリンクの追加  GitHubにpushしたらdeployが行われるよう設定する GitHub actionを利用して、自動的にgithub-pagesにdeployが行われるように設定します。 peaceiris/actions-hugo@v2とpeaceiris/actions-gh-pages@v3を利用しました。
-Reference  https://gohugo.io/getting-started/quick-start/ https://github.com/adityatelange/hugo-PaperMod  </description>
     </item>
     
   </channel>
