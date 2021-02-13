@@ -5,7 +5,19 @@
     <link>https://hattomo.github.io/categories/computer/</link>
     <description>Recent content in computer on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 11:48:30 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HugoでLastmodが同一時刻になる</title>
+      <link>https://hattomo.github.io/posts/21/q1/0213-gahugo/</link>
+      <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0213-gahugo/</guid>
+      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: trueと記入しておくとgitのlogをもとにHugoが自動的にLastmodを設定しくれます。しかし、GitHub ActionsでHugoをビルドしたところ、すべてのLastmodが同じ時間(pushした時刻)になってしまっていました。
+解決法 GitHub Actionsのファイルは以下のようでした。
+name:Build GH-Pageson:push:branches:- mainjobs:deploy:runs-on:macos-lateststeps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursive # Fetch Hugo themes (true OR recursive)- name:Setup hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;latest&amp;#39;- name:Buildrun:hugo --gc --verbose --minify- name:Deployuses:peaceiris/actions-gh-pages@v3with:deploy_key:${{ secrets.ACTIONS_DEPLOY_KEY }}external_repository:Hattomo/Hattomo.github.iopublish_branch:mainpublish_dir:./public問題は、ソースをダウンロードする際、fetch-depthがデフォルトで1になっていることでした。fetch-depthが1の場合、最新のコードのみを持ってくるようです。そのため、履歴がなくLastmodが同一時刻になっていたのでした。以下のように、fetch-depthに0を設定したところ正しく動くようになりました。
+steps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursivefetch-depth:0# Add</description>
+    </item>
+    
     <item>
       <title>HugoでGoogle Analytics 4を利用する</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</link>
