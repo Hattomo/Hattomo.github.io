@@ -5,7 +5,35 @@
     <link>https://hattomo.github.io/</link>
     <description>Recent content on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 05:18:27 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 19:18:41 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windowsの時間をUTCで管理する</title>
+      <link>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</link>
+      <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</guid>
+      <description>はじめに WindowsをLinuxやmacOS(bootcampでない)とデュアルブートしていると、OSの時計表示がおかしくなってしまうことがあります。
+どうしておかしくなるのか Windowsは内部でローカルの時間を利用しています。日本であればUTC+09:00です。電源を切るとき、BIOSにこの値を保存します。BIOSは搭載された電池によって、この値を保持・更新し、次回Windowsが起動する際にWindowsに渡します。しかし、LinuxやmacOSでは、UTCそのもので時間を管理し、表示する際にはタイムゾーンに合わせた値を計算します。このため、例えば、WindowsがUTC+09:00としてシャットダウン時に保存した値をLinuxはUTCと解釈してしまうのです。逆もまた然りです。このため、どちらかの方法に統一する必要があります。今回はWindowsの時間管理をUTCにあわせます。
+WindowsをUTCに コマンドプロンプトを開いて以下のコマンドを実行します。
+# set UTC reg add &amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f 戻す際は、下のコマンドを実行してください。
+# unset reg delete HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /f このあと時刻表示がおかしくなっているOSをNTPサーバーと同期して正しい時刻に修正すれば、完了です。</description>
+    </item>
+    
+    <item>
+      <title>シェルでHugoのポストを新規作成する</title>
+      <link>https://hattomo.github.io/posts/21/q1/0213-newpost/</link>
+      <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0213-newpost/</guid>
+      <description>はじめに Hugoで新しいポストを作成するコマンドは、
+hugo new [path to new file] ですが、私はフォルダを分けているので
+hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。いちいち入力するのはめんどくさいし、よく間違えるのでシェルスクリプトを作りました。
+# usage ./new.sh title 作り方 中身は以下のようになっています。
+title=$1 year=`date &amp;#39;+%y&amp;#39;` quoter=`date &amp;#39;+Q%q&amp;#39;` date=`date &amp;#39;+%m%d-&amp;#39;` path=posts/$year/$quoter/$date$title/index.md hugo new $path まず、$1はコマンドライン引数を表しています。ここにタイトルが入ります。
+また、このようにすると変数varにコマンドの結果を入れることができます。
+var=`command` dateコマンドを利用して必要な値を取得し、変数に入れ、$pathで結合しています。 あとはコマンドを実行して新しいポストを生成するだけです。</description>
+    </item>
+    
     <item>
       <title>GitHub CodespacesでHugo</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</link>
