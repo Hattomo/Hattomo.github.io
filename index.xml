@@ -5,7 +5,19 @@
     <link>https://hattomo.github.io/</link>
     <description>Recent content on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 19:18:41 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 17:27:04 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutterが使える機能の管理</title>
+      <link>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</link>
+      <pubDate>Sun, 14 Feb 2021 17:27:04 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</guid>
+      <description>はじめに 少し前に、ひさしぶりにflutterのイベントFlutter Engageが開かれることが発表されました。コロナウイルスの影響で2020年は、flutterのイベントだけでなく、GoogleIOもなくなってしまい残念でした。
+Flutterの機能管理 Flutterのそれぞれのチャンネルで利用可能なプラットフォームはここで管理されています。Flutterはオープンソースなのでこの場所を見ることでイベントでの発表を予測することができます。
+たとえば、macOSの部分を見ると
+/// The [Feature] for macOS desktop. const Feature flutterMacOSDesktopFeature = Feature( name: &amp;#39;beta-quality support for desktop on macOS&amp;#39;, configSetting: &amp;#39;enable-macos-desktop&amp;#39;, environmentOverride: &amp;#39;FLUTTER_MACOS&amp;#39;, extraHelpText: flutterNext ? &amp;#39;Newer beta versions are available on the beta channel.&amp;#39; : null, master: FeatureChannelSetting( available: true, enabledByDefault: false, ), dev: FeatureChannelSetting( available: true, enabledByDefault: false, ), beta: FeatureChannelSetting( available: flutterNext, enabledByDefault: false, ), stable: FeatureChannelSetting( available: flutterNext, enabledByDefault: false, ), ); このようになっています。availableの部分にflutterNextと書かれていますが、ファイルの最後の行に</description>
+    </item>
+    
     <item>
       <title>Windowsの時間をUTCで管理する</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</link>
