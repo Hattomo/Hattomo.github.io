@@ -5,7 +5,16 @@
     <link>https://hattomo.github.io/categories/computer/</link>
     <description>Recent content in computer on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 Feb 2021 17:27:04 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 23:11:34 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoで読了時間や文字数表示がおかしい</title>
+      <link>https://hattomo.github.io/posts/21/q1/0214-readingtime/</link>
+      <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0214-readingtime/</guid>
+      <description>はじめに Hugoをつかって、このページを作成していますが、読了時間の表示が常に1 minと表示されていました。おかしいと思っていましたが、さら</description>
+    </item>
+    
     <item>
       <title>Flutterが使える機能の管理</title>
       <link>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</link>
