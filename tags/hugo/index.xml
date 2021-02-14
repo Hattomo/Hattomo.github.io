@@ -5,20 +5,23 @@
     <link>https://hattomo.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 18:47:00 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 23:11:34 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoで読了時間や文字数表示がおかしい</title>
+      <link>https://hattomo.github.io/posts/21/q1/0214-readingtime/</link>
+      <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0214-readingtime/</guid>
+      <description>はじめに Hugoをつかって、このページを作成していますが、読了時間の表示が常に1 minと表示されていました。おかしいと思っていましたが、さら</description>
+    </item>
+    
     <item>
       <title>シェルでHugoのポストを新規作成する</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-newpost/</link>
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-newpost/</guid>
-      <description>はじめに Hugoで新しいポストを作成するコマンドは、
-hugo new [path to new file] ですが、私はフォルダを分けているので
-hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。いちいち入力するのはめんどくさいし、よく間違えるのでシェルスクリプトを作りました。
-# usage ./new.sh title 作り方 中身は以下のようになっています。
-title=$1 year=`date &amp;#39;+%y&amp;#39;` quoter=`date &amp;#39;+Q%q&amp;#39;` date=`date &amp;#39;+%m%d-&amp;#39;` path=posts/$year/$quoter/$date$title/index.md hugo new $path まず、$1はコマンドライン引数を表しています。ここにタイトルが入ります。
-また、このようにすると変数varにコマンドの結果を入れることができます。
-var=`command` dateコマンドを利用して必要な値を取得し、変数に入れ、$pathで結合しています。 あとはコマンドを実行して新しいポストを生成するだけです。</description>
+      <description>はじめに Hugoで新しいポストを作成するコマンドは、 hugo new [path to new file] ですが、私はフォルダを分けているので hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。</description>
     </item>
     
     <item>
@@ -27,13 +30,7 @@ var=`command` dateコマンドを利用して必要な値を取得し、変数�
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</guid>
-      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub CodespacesでHugoを使ってみます。(この記事はGitHubCodespaces上で書いています。)
-Hugoで使う GitHub Codespacesの基本的な使い方は省略します。Hugoの場合、いつものようにHugo server -Dとすると、baseURLのページは見れるのですが、そこからページの移動ができません。リンク先がlocalhost:1313/pathになっているためです。そこで、Hugoを起動する際、
-hugo server -D --baseUrl=&amp;#34;https://[your URL]-1313.apps.codespaces.githubusercontent.com/&amp;#34; --appendPort=false のように実行することでリンクを機能させることができます。 一つ目はBaseURLの変更です。しかし、これだけだと1313ポートにアクセスしてしまうため、--appendPort=falseでこれを修正します。これでリンク先が機能します。
-感想 リモートにつないでいるにも関わらず、かなり快適に作業することができます。さらにVSCodeがエクステンションやテーマ、キーバインドも含めて完全に動いているのでリモートに接続していることを忘れてしまいそうです。
-リモートマシンはOS:Ubuntu18.04、CPU:Intel(R) Xeon(R) Platinum 8168 CPU @ 2.70GH、RAM 8GB、Stroge:32GBで動いているようです。Hugoを使うだけなら十分すぎます。最初から入っているため、Hugoのインストールなど煩わしいことも必要ありませんでした。しかし、ページはリロードを自分で行わなければ更新されませんでした。この点は微妙です。何か方法があるのかもしれませんが。
-Webブラウザでコードを書くのは、最近のトレンドになっていますが、GoogleのStdiaとか、Windows10のcloud PCのうわさとか、クラウド上で動かすのは当たり前になっていくのでしょうか。
-一つお願いがあるとすれば、GitHub Codespacesは有料化するまでにセルフホストできるようにしてほしいです。この点はVSCode Onlineから、後退してしまうので。</description>
+      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
     </item>
     
     <item>
@@ -42,10 +39,7 @@ Webブラウザでコードを書くのは、最近のトレンドになって�
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-gahugo/</guid>
-      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: trueと記入しておくとgitのlogをもとにHugoが自動的にLastmodを設定しくれます。しかし、GitHub ActionsでHugoをビルドしたところ、すべてのLastmodが同じ時間(pushした時刻)になってしまっていました。
-解決法 GitHub Actionsのファイルは以下のようでした。
-name:Build GH-Pageson:push:branches:- mainjobs:deploy:runs-on:macos-lateststeps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursive # Fetch Hugo themes (true OR recursive)- name:Setup hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;latest&amp;#39;- name:Buildrun:hugo --gc --verbose --minify- name:Deployuses:peaceiris/actions-gh-pages@v3with:deploy_key:${{ secrets.ACTIONS_DEPLOY_KEY }}external_repository:Hattomo/Hattomo.github.iopublish_branch:mainpublish_dir:./public問題は、ソースをダウンロードする際、fetch-depthがデフォルトで1になっていることでした。fetch-depthが1の場合、最新のコードのみを持ってくるようです。そのため、履歴がなくLastmodが同一時刻になっていたのでした。以下のように、fetch-depthに0を設定したところ正しく動くようになりました。
-steps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursivefetch-depth:0# Add</description>
+      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
     </item>
     
     <item>
@@ -54,12 +48,7 @@ steps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursivefetch-
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</guid>
-      <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されました。しかしHugoでは、標準ではまだ対応していません。(これを書いているときの最新バージョンは0.80です)しかし、HugoではGA4を簡単に利用することができます。
-GA4を導入する GoogleAnalytics にアクセスし、GA4のIDを取得します。その方法はここでは省略します。GA4のIDはG-xxxxxxxxxxのようにGから始まります。UAから始まっている場合は、従来のIDです。
-IDが取得出来たら、Hugoのフォルダtheme/layoutの適当なところに新規HTMLファイルを作成し、以下のように追記します。
- analytics-gtag.html  &amp;lt;!-- Global site tag (gtag.js) - Google Analytics 4--&amp;gt; &amp;lt;script async src=&amp;#34;https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag(&amp;#39;js&amp;#39;, new Date()); gtag(&amp;#39;config&amp;#39;, &amp;#39;{{ .Site.GoogleAnalytics }}&amp;#39;); &amp;lt;/script&amp;gt; 次に、configファイルに移動し、GoogleAnalyticsのIDを設定します。ymlの場合は、以下のようになります。
-GoogleAnalytics:G-xxxxxxxx最後にこれらの設定を読み込みます。theme/layouts/partials/head.htmlのファイルの一番下のほうにある外部ファイルの読み込みを修正します。google_analytics_asyncは従来のgoogle analyticsなので消します。逆に、先ほど作成したファイルのパスを下のように追記します。
-～省略～ {{- template &amp;#34;_internal/google_analytics_async.html&amp;#34; . }} &amp;lt;!--Delete--&amp;gt; {{- template &amp;#34;{path to file}/analytics-gtag.html&amp;#34; . }} &amp;lt;!--Add GA4--&amp;gt; {{- template &amp;#34;_internal/google_news.html&amp;#34; . }} {{- template &amp;#34;partials/templates/opengraph.</description>
+      <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されまし</description>
     </item>
     
     <item>
@@ -68,14 +57,7 @@ GoogleAnalytics:G-xxxxxxxx最後にこれらの設定を読み込みます。the
       <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</guid>
-      <description>Hugo をインストールする homebrewを利用した方法が、一般的なようでしたが、Install hugoを参考にGitHubからバイナリをダウンロードし、解凍したhugoの実行ファイルを/usr/local/binに配置しました。
-テーマを決める テーマは少し迷いましたが、hugo-PaperModにしました。開発が活発に続けられていたこと、ドキュメントが整備されていたこと、デザインが気に入ったためです。
-gitのサブモジュールに登録します。
-git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1 git submodule update --init --recursive 今後テーマをアップデートするためには、以下のコマンドを実行します。
-git submodule update --remote --merge 新規記事を作成する 以下のコマンドを実行します。
-hugo new posts/{path to new file}.md Hugo ローカルサーバーを立ち上げる hugo server -D テーマを編集する テーマをフォークし、次のような変更を行いました(行う予定です)。
- 文字サイズの変更 google analytics の追加 klatexのサポート Syntax Highlightingの設定 前回の記事、次の記事へのリンクの追加  GitHubにpushしたらdeployが行われるよう設定する GitHub actionを利用して、自動的にgithub-pagesにdeployが行われるように設定します。 peaceiris/actions-hugo@v2とpeaceiris/actions-gh-pages@v3を利用しました。
-Reference  https://gohugo.io/getting-started/quick-start/ https://github.com/adityatelange/hugo-PaperMod  </description>
+      <description>Hugo をインストールする homebrewを利用した方法が、一般的なようでしたが、Install hugoを参考にGitHubからバイナリをダウンロ</description>
     </item>
     
   </channel>

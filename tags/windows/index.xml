@@ -12,11 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</guid>
-      <description>はじめに WindowsをLinuxやmacOS(bootcampでない)とデュアルブートしていると、OSの時計表示がおかしくなってしまうことがあります。
-どうしておかしくなるのか Windowsは内部でローカルの時間を利用しています。日本であればUTC+09:00です。電源を切るとき、BIOSにこの値を保存します。BIOSは搭載された電池によって、この値を保持・更新し、次回Windowsが起動する際にWindowsに渡します。しかし、LinuxやmacOSでは、UTCそのもので時間を管理し、表示する際にはタイムゾーンに合わせた値を計算します。このため、例えば、WindowsがUTC+09:00としてシャットダウン時に保存した値をLinuxはUTCと解釈してしまうのです。逆もまた然りです。このため、どちらかの方法に統一する必要があります。今回はWindowsの時間管理をUTCにあわせます。
-WindowsをUTCに コマンドプロンプトを開いて以下のコマンドを実行します。
-# set UTC reg add &amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f 戻す際は、下のコマンドを実行してください。
-# unset reg delete HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /f このあと時刻表示がおかしくなっているOSをNTPサーバーと同期して正しい時刻に修正すれば、完了です。</description>
+      <description>はじめに WindowsをLinuxやmacOS(bootcampでない)とデュアルブートしていると、OSの時計表示がおかしくなってしまうこと</description>
     </item>
     
   </channel>

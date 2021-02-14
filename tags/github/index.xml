@@ -12,13 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</guid>
-      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub CodespacesでHugoを使ってみます。(この記事はGitHubCodespaces上で書いています。)
-Hugoで使う GitHub Codespacesの基本的な使い方は省略します。Hugoの場合、いつものようにHugo server -Dとすると、baseURLのページは見れるのですが、そこからページの移動ができません。リンク先がlocalhost:1313/pathになっているためです。そこで、Hugoを起動する際、
-hugo server -D --baseUrl=&amp;#34;https://[your URL]-1313.apps.codespaces.githubusercontent.com/&amp;#34; --appendPort=false のように実行することでリンクを機能させることができます。 一つ目はBaseURLの変更です。しかし、これだけだと1313ポートにアクセスしてしまうため、--appendPort=falseでこれを修正します。これでリンク先が機能します。
-感想 リモートにつないでいるにも関わらず、かなり快適に作業することができます。さらにVSCodeがエクステンションやテーマ、キーバインドも含めて完全に動いているのでリモートに接続していることを忘れてしまいそうです。
-リモートマシンはOS:Ubuntu18.04、CPU:Intel(R) Xeon(R) Platinum 8168 CPU @ 2.70GH、RAM 8GB、Stroge:32GBで動いているようです。Hugoを使うだけなら十分すぎます。最初から入っているため、Hugoのインストールなど煩わしいことも必要ありませんでした。しかし、ページはリロードを自分で行わなければ更新されませんでした。この点は微妙です。何か方法があるのかもしれませんが。
-Webブラウザでコードを書くのは、最近のトレンドになっていますが、GoogleのStdiaとか、Windows10のcloud PCのうわさとか、クラウド上で動かすのは当たり前になっていくのでしょうか。
-一つお願いがあるとすれば、GitHub Codespacesは有料化するまでにセルフホストできるようにしてほしいです。この点はVSCode Onlineから、後退してしまうので。</description>
+      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
     </item>
     
     <item>
@@ -27,10 +21,7 @@ Webブラウザでコードを書くのは、最近のトレンドになって�
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-gahugo/</guid>
-      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: trueと記入しておくとgitのlogをもとにHugoが自動的にLastmodを設定しくれます。しかし、GitHub ActionsでHugoをビルドしたところ、すべてのLastmodが同じ時間(pushした時刻)になってしまっていました。
-解決法 GitHub Actionsのファイルは以下のようでした。
-name:Build GH-Pageson:push:branches:- mainjobs:deploy:runs-on:macos-lateststeps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursive # Fetch Hugo themes (true OR recursive)- name:Setup hugouses:peaceiris/actions-hugo@v2with:hugo-version:&amp;#39;latest&amp;#39;- name:Buildrun:hugo --gc --verbose --minify- name:Deployuses:peaceiris/actions-gh-pages@v3with:deploy_key:${{ secrets.ACTIONS_DEPLOY_KEY }}external_repository:Hattomo/Hattomo.github.iopublish_branch:mainpublish_dir:./public問題は、ソースをダウンロードする際、fetch-depthがデフォルトで1になっていることでした。fetch-depthが1の場合、最新のコードのみを持ってくるようです。そのため、履歴がなくLastmodが同一時刻になっていたのでした。以下のように、fetch-depthに0を設定したところ正しく動くようになりました。
-steps:- name:Git checkoutuses:actions/checkout@v2with:submodules:recursivefetch-depth:0# Add</description>
+      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
     </item>
     
   </channel>

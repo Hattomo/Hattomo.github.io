@@ -12,13 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-newpost/</guid>
-      <description>はじめに Hugoで新しいポストを作成するコマンドは、
-hugo new [path to new file] ですが、私はフォルダを分けているので
-hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。いちいち入力するのはめんどくさいし、よく間違えるのでシェルスクリプトを作りました。
-# usage ./new.sh title 作り方 中身は以下のようになっています。
-title=$1 year=`date &amp;#39;+%y&amp;#39;` quoter=`date &amp;#39;+Q%q&amp;#39;` date=`date &amp;#39;+%m%d-&amp;#39;` path=posts/$year/$quoter/$date$title/index.md hugo new $path まず、$1はコマンドライン引数を表しています。ここにタイトルが入ります。
-また、このようにすると変数varにコマンドの結果を入れることができます。
-var=`command` dateコマンドを利用して必要な値を取得し、変数に入れ、$pathで結合しています。 あとはコマンドを実行して新しいポストを生成するだけです。</description>
+      <description>はじめに Hugoで新しいポストを作成するコマンドは、 hugo new [path to new file] ですが、私はフォルダを分けているので hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。</description>
     </item>
     
   </channel>

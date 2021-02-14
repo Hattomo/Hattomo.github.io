@@ -12,12 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</guid>
-      <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されました。しかしHugoでは、標準ではまだ対応していません。(これを書いているときの最新バージョンは0.80です)しかし、HugoではGA4を簡単に利用することができます。
-GA4を導入する GoogleAnalytics にアクセスし、GA4のIDを取得します。その方法はここでは省略します。GA4のIDはG-xxxxxxxxxxのようにGから始まります。UAから始まっている場合は、従来のIDです。
-IDが取得出来たら、Hugoのフォルダtheme/layoutの適当なところに新規HTMLファイルを作成し、以下のように追記します。
- analytics-gtag.html  &amp;lt;!-- Global site tag (gtag.js) - Google Analytics 4--&amp;gt; &amp;lt;script async src=&amp;#34;https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag(&amp;#39;js&amp;#39;, new Date()); gtag(&amp;#39;config&amp;#39;, &amp;#39;{{ .Site.GoogleAnalytics }}&amp;#39;); &amp;lt;/script&amp;gt; 次に、configファイルに移動し、GoogleAnalyticsのIDを設定します。ymlの場合は、以下のようになります。
-GoogleAnalytics:G-xxxxxxxx最後にこれらの設定を読み込みます。theme/layouts/partials/head.htmlのファイルの一番下のほうにある外部ファイルの読み込みを修正します。google_analytics_asyncは従来のgoogle analyticsなので消します。逆に、先ほど作成したファイルのパスを下のように追記します。
-～省略～ {{- template &amp;#34;_internal/google_analytics_async.html&amp;#34; . }} &amp;lt;!--Delete--&amp;gt; {{- template &amp;#34;{path to file}/analytics-gtag.html&amp;#34; . }} &amp;lt;!--Add GA4--&amp;gt; {{- template &amp;#34;_internal/google_news.html&amp;#34; . }} {{- template &amp;#34;partials/templates/opengraph.</description>
+      <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されまし</description>
     </item>
     
   </channel>
