@@ -16,15 +16,6 @@
     </item>
     
     <item>
-      <title>karabiner</title>
-      <link>https://hattomo.github.io/tags/karabiner/</link>
-      <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/tags/karabiner/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>macos</title>
       <link>https://hattomo.github.io/tags/macos/</link>
       <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
@@ -70,15 +61,6 @@
     </item>
     
     <item>
-      <title>codespaces</title>
-      <link>https://hattomo.github.io/tags/codespaces/</link>
-      <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
-      
-      <guid>https://hattomo.github.io/tags/codespaces/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>github</title>
       <link>https://hattomo.github.io/tags/github/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
@@ -88,11 +70,11 @@
     </item>
     
     <item>
-      <title>githubactions</title>
-      <link>https://hattomo.github.io/tags/githubactions/</link>
+      <title>ci</title>
+      <link>https://hattomo.github.io/tags/ci/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/tags/githubactions/</guid>
+      <guid>https://hattomo.github.io/tags/ci/</guid>
       <description></description>
     </item>
     

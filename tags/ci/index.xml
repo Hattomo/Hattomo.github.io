@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>githubactions on Hattomo</title>
-    <link>https://hattomo.github.io/tags/githubactions/</link>
-    <description>Recent content in githubactions on Hattomo</description>
+    <title>ci on Hattomo</title>
+    <link>https://hattomo.github.io/tags/ci/</link>
+    <description>Recent content in ci on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/githubactions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-gahugo/</link>
