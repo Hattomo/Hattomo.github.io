@@ -1,163 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://hattomo.github.io/tags/app/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/categories/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/categories/computer/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/windows/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/macos/</loc>
     <lastmod>2021-02-16T00:15:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0215-karabiner-office/</loc>
     <lastmod>2021-02-16T00:15:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/hugo/</loc>
     <lastmod>2021-02-18T11:58:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0214-readingtime/</loc>
     <lastmod>2021-02-14T23:35:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/flutter/</loc>
     <lastmod>2021-02-14T18:22:52+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</loc>
     <lastmod>2021-02-14T18:22:52+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</loc>
     <lastmod>2021-02-13T19:49:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/shellscript/</loc>
     <lastmod>2021-02-18T11:58:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-newpost/</loc>
     <lastmod>2021-02-18T11:58:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/github/</loc>
     <lastmod>2021-02-18T00:16:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</loc>
     <lastmod>2021-02-13T06:01:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/ci/</loc>
     <lastmod>2021-02-18T00:16:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-gahugo/</loc>
     <lastmod>2021-02-18T00:16:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/googleanalytics/</loc>
     <lastmod>2021-02-13T12:28:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</loc>
     <lastmod>2021-02-13T12:28:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/vscode/</loc>
     <lastmod>2021-02-13T11:46:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-vscodedefaultfont/</loc>
     <lastmod>2021-02-13T11:46:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/tags/python/</loc>
     <lastmod>2021-02-12T18:50:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0210-python-commands/</loc>
     <lastmod>2021-02-12T18:50:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/privacypolicy/</loc>
     <lastmod>2021-02-24T14:59:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</loc>
     <lastmod>2021-02-11T16:01:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/about/</loc>
     <lastmod>2021-02-13T13:45:52+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/archives/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hattomo.github.io/search/</loc>
   </url>
-  
 </urlset>
