@@ -5,7 +5,16 @@
     <link>https://hattomo.github.io/posts/</link>
     <description>Recent content in Posts on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Feb 2021 11:05:19 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 00:13:52 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>経営工学についてのメモ1</title>
+      <link>https://hattomo.github.io/posts/21/q1/0227-management-1/</link>
+      <pubDate>Mon, 01 Mar 2021 00:13:52 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0227-management-1/</guid>
+      <description>はじめに 経営についてのメモです。 経営工学 企業と経営 企業とは 一定の計画に基づき、経済的に活動を続ける経済単位。 利益を出すことに限らない 私企業と</description>
+    </item>
+    
     <item>
       <title>Auto HotkeyでMac風キーバインド！</title>
       <link>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</link>
