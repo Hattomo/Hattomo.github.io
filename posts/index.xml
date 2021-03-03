@@ -35,10 +35,10 @@
     
     <item>
       <title>Hugoで読了時間や文字数表示がおかしい</title>
-      <link>https://hattomo.github.io/posts/21/q1/0214-readingtime/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0214-hugo-reading-time/</link>
       <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0214-readingtime/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0214-hugo-reading-time/</guid>
       <description>はじめに Hugoをつかって、このページを作成していますが、読了時間の表示が常に1 minと表示されていました。おかしいと思っていましたが、さら</description>
     </item>
     
@@ -53,55 +53,55 @@
     
     <item>
       <title>Windowsの時間をUTCで管理する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</link>
       <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-windowsutc/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</guid>
       <description>はじめに WindowsをLinuxやmacOS(bootcampでない)とデュアルブートしていると、OSの時計表示がおかしくなってしまうこと</description>
     </item>
     
     <item>
       <title>シェルでHugoのポストを新規作成する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-newpost/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-new-post/</link>
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-newpost/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-new-post/</guid>
       <description>はじめに Hugoで新しいポストを作成するコマンドは、 hugo new [path to new file] ですが、私はフォルダを分けているので hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。</description>
     </item>
     
     <item>
       <title>GitHub CodespacesでHugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
       <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
     </item>
     
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-gahugo/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-gahugo/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
     </item>
     
     <item>
       <title>HugoでGoogle Analytics 4を利用する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-new-google-analytics-4/</link>
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-newgoogleanalytics/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-new-google-analytics-4/</guid>
       <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されまし</description>
     </item>
     
     <item>
       <title>VSCodeのデフォルトフォントを確認する方法</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-vscodedefaultfont/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</link>
       <pubDate>Sat, 13 Feb 2021 10:41:23 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-vscodedefaultfont/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</guid>
       <description>はじめに MicrosoftのVSCodeでデフォルトのフォントを確認する方法です。先日、このサイトのほかのページにコードを書いたところ、ma</description>
     </item>
     
@@ -116,10 +116,10 @@
     
     <item>
       <title>How to install and use Hugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0127-how-to-use-hugo/</link>
       <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0127-howtousehugo/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0127-how-to-use-hugo/</guid>
       <description>Hugo をインストールする homebrewを利用した方法が、一般的なようでしたが、Install hugoを参考にGitHubからバイナリをダウンロ</description>
     </item>
     

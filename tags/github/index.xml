@@ -8,19 +8,19 @@
     <lastBuildDate>Sat, 13 Feb 2021 05:18:27 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub CodespacesでHugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-hugoghcode/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
       <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
     </item>
     
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-gahugo/</link>
+      <link>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-gahugo/</guid>
+      <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
     </item>
     
