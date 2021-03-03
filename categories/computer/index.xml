@@ -43,7 +43,7 @@
     </item>
     
     <item>
-      <title>Windowsの時間をUTCで管理する</title>
+      <title>WindowsのハードウェアクロックをUTCで管理する</title>
       <link>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</link>
       <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
       
