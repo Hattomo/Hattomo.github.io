@@ -5,7 +5,16 @@
     <link>https://hattomo.github.io/</link>
     <description>Recent content on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Mar 2021 00:13:52 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 00:11:07 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PythonでLINEトークの履歴を解析し、グラフを生成する</title>
+      <link>https://hattomo.github.io/posts/21/q1/0304-python-line/</link>
+      <pubDate>Fri, 12 Mar 2021 00:11:07 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0304-python-line/</guid>
+      <description>はじめに Lineには、トーク履歴をエクスポートする機能が付いています。これをPythonを使って解析し、合計メッセージ数、それぞれのメッセー</description>
+    </item>
+    
     <item>
       <title>経営工学についてのメモ1</title>
       <link>https://hattomo.github.io/posts/21/q1/0227-management-1/</link>

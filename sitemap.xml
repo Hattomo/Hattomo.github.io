@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hattomo.github.io/categories/</loc>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
+  </url><url>
+    <loc>https://hattomo.github.io/categories/computer/</loc>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
+  </url><url>
     <loc>https://hattomo.github.io/</loc>
-    <lastmod>2021-03-03T11:36:24+09:00</lastmod>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/posts/</loc>
-    <lastmod>2021-03-03T11:36:24+09:00</lastmod>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
+  </url><url>
+    <loc>https://hattomo.github.io/tags/python/</loc>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
+  </url><url>
+    <loc>https://hattomo.github.io/posts/21/q1/0304-python-line/</loc>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
+  </url><url>
+    <loc>https://hattomo.github.io/tags/</loc>
+    <lastmod>2021-03-12T16:11:07+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0227-management-1/</loc>
     <lastmod>2021-03-01T22:13:52+09:00</lastmod>
@@ -16,15 +31,6 @@
   </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</loc>
     <lastmod>2021-02-23T11:05:19+09:00</lastmod>
-  </url><url>
-    <loc>https://hattomo.github.io/categories/</loc>
-    <lastmod>2021-03-03T11:36:24+09:00</lastmod>
-  </url><url>
-    <loc>https://hattomo.github.io/categories/computer/</loc>
-    <lastmod>2021-03-03T11:36:24+09:00</lastmod>
-  </url><url>
-    <loc>https://hattomo.github.io/tags/</loc>
-    <lastmod>2021-03-03T11:36:24+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/tags/windows/</loc>
     <lastmod>2021-03-03T11:36:24+09:00</lastmod>
@@ -79,9 +85,6 @@
   </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</loc>
     <lastmod>2021-02-13T11:46:42+09:00</lastmod>
-  </url><url>
-    <loc>https://hattomo.github.io/tags/python/</loc>
-    <lastmod>2021-02-12T18:50:35+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/posts/21/q1/0210-python-commands/</loc>
     <lastmod>2021-02-12T18:50:35+09:00</lastmod>
