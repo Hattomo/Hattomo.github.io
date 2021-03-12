@@ -5,7 +5,16 @@
     <link>https://hattomo.github.io/categories/computer/</link>
     <description>Recent content in computer on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Mar 2021 00:11:07 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 09:20:07 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Youtubeの動画をダウンロードするyoutube-dlを試す</title>
+      <link>https://hattomo.github.io/posts/21/q1/0312-youtube/</link>
+      <pubDate>Fri, 12 Mar 2021 09:20:07 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q1/0312-youtube/</guid>
+      <description>はじめに YouTubeの動画をダウンロードするyoutube-dl(GitHub)を試してみました。 インストール方法 GitHubのREADM</description>
+    </item>
+    
     <item>
       <title>PythonでLINEトークの履歴を解析し、グラフを生成する</title>
       <link>https://hattomo.github.io/posts/21/q1/0304-python-line/</link>
