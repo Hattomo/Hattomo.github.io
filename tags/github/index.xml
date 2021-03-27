@@ -12,7 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
-      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
+      <description>GitHub Codespaces is all new way to coding, I tried it to write hugo blog and it was great exprience.</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
-      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
+      <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
     
   </channel>

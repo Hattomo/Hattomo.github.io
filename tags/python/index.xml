@@ -12,7 +12,7 @@
       <pubDate>Fri, 12 Mar 2021 00:11:07 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0304-python-line/</guid>
-      <description>はじめに Lineには、トーク履歴をエクスポートする機能が付いています。これをPythonを使って解析し、合計メッセージ数、それぞれのメッセー</description>
+      <description>PythonでLINEトークの履歴を解析し、グラフを生成する</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0210-python-commands/</guid>
-      <description>Python Environment Python便利なコマンドのメモです。 venv # if you do not have venv # linux $ sudo apt install python3-venv # create virtual environment $ python3 -m venv [/path/to/new/virtual/environment] # activate $ cd [environment name] $ source [environment name]/bin/activate # deactivate $ deactivate Module input &amp;amp; output $ pip3 freeze &amp;gt; requirements.txt $ pip3</description>
+      <description>Memolize Python useful tools</description>
     </item>
     
   </channel>

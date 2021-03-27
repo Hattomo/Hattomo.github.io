@@ -12,7 +12,7 @@
       <pubDate>Thu, 25 Mar 2021 15:10:58 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0325-docker-commands/</guid>
-      <description>Doker Docker command # show container list docker container ls -a # get image from docker hub repo docker pull ubuntu:20.04 # show image list docker images # create container # -v (v option) mount host directory # -h (h option) set host name docker run -it -d -v /mnt/c/Users/ringp:/for_docker -h &amp;#34;host name&amp;#34; --privileged --name RISCVemu-u2004 ubuntu:20.04 # start container docker start [container name/ID] # stop container docker stop [container</description>
+      <description>Useful Docker Commands</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Sat, 13 Mar 2021 13:04:08 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0313-chrome-extension/</guid>
-      <description>はじめに Chromeでローカルにあるビデオや音声ファイルを開くと再生することができます。しかし、一時停止、再生、音量の変更、Picture in</description>
+      <description>Chrome Extensionでローカルにあるビデオや音声ファイルのメディアコントローラーの拡張を作成していきます!</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Fri, 12 Mar 2021 09:20:07 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0312-youtube/</guid>
-      <description>はじめに YouTubeの動画をダウンロードするyoutube-dl(GitHub)を試してみました。 インストール方法 GitHubのREADM</description>
+      <description>Youtubeの動画をダウンロードするyoutube-dlを試す</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@
       <pubDate>Fri, 12 Mar 2021 00:11:07 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0304-python-line/</guid>
-      <description>はじめに Lineには、トーク履歴をエクスポートする機能が付いています。これをPythonを使って解析し、合計メッセージ数、それぞれのメッセー</description>
+      <description>PythonでLINEトークの履歴を解析し、グラフを生成する</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <pubDate>Tue, 23 Feb 2021 11:05:19 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</guid>
-      <description>はじめに WindowsでもmacOS風のキーバインドを利用したいことがあると思います。そのための設定です。レジストリとAutoHotKeyを</description>
+      <description>WindowsでmacOS風のキーバインドや便利なショートカットの設定をAutoHotKeyを利用して設定する方法</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0215-karabiner-office/</guid>
-      <description>はじめに macOS上では、emacsのキーバインドが一部利用できて便利です。このキーバインドは大抵のテキストエデットアプリには、対応している</description>
+      <description>macOSのMicrosoft OfficeでEmacs風キーバインドを設定する</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@
       <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0214-hugo-reading-time/</guid>
-      <description>はじめに Hugoをつかって、このページを作成していますが、読了時間の表示が常に1 minと表示されていました。おかしいと思っていましたが、さら</description>
+      <description>Hugoで読了時間や文字数表示がおかしい場合の対処法</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@
       <pubDate>Sun, 14 Feb 2021 17:27:04 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</guid>
-      <description>はじめに 少し前に、ひさしぶりにflutterのイベントFlutter Engageが開かれることが発表されました。コロナウイルスの影響で202</description>
+      <description>Flutterのチャンネルで使える機能はどのように管理されているか</description>
     </item>
     
     <item>
@@ -84,7 +84,7 @@
       <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</guid>
-      <description>はじめに WindowsをLinuxやmacOS(bootcampでない)とデュアルブートしていると、OSの時計表示がおかしくなってしまうこと</description>
+      <description>WindowsのハードウェアクロックをUTCで管理する方法</description>
     </item>
     
     <item>
@@ -93,7 +93,7 @@
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-new-post/</guid>
-      <description>はじめに Hugoで新しいポストを作成するコマンドは、 hugo new [path to new file] ですが、私はフォルダを分けているので hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。</description>
+      <description>hugoのポストをシェルで新規作成する方法</description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
-      <description>はじめに GitHub Codespacesがβになってからしばらくたちました。βの間は無料のようなので、気軽に試すことができます。今回はGithub Co</description>
+      <description>GitHub Codespaces is all new way to coding, I tried it to write hugo blog and it was great exprience.</description>
     </item>
     
     <item>
@@ -111,7 +111,7 @@
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
-      <description>はじめに Hugoでは、記事の最終更新時刻をLastmodを利用して表すことができます。configファイルでenableGitInfo: tr</description>
+      <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
     
     <item>
@@ -120,7 +120,7 @@
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-new-google-analytics-4/</guid>
-      <description>はじめに 様々なサイトに導入されているGoogle Analyticsですが、2020年より新たにGoogle Analytics 4(以下GA4)が、導入されまし</description>
+      <description>Hugoで新しくなったGoogleAnalyticsを使う</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@
       <pubDate>Sat, 13 Feb 2021 10:41:23 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</guid>
-      <description>はじめに MicrosoftのVSCodeでデフォルトのフォントを確認する方法です。先日、このサイトのほかのページにコードを書いたところ、ma</description>
+      <description>VSCodeのデフォルトのフォントはOSごとに何が設定されているか調査する</description>
     </item>
     
     <item>
@@ -138,7 +138,7 @@
       <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0210-python-commands/</guid>
-      <description>Python Environment Python便利なコマンドのメモです。 venv # if you do not have venv # linux $ sudo apt install python3-venv # create virtual environment $ python3 -m venv [/path/to/new/virtual/environment] # activate $ cd [environment name] $ source [environment name]/bin/activate # deactivate $ deactivate Module input &amp;amp; output $ pip3 freeze &amp;gt; requirements.txt $ pip3</description>
+      <description>Memolize Python useful tools</description>
     </item>
     
     <item>
@@ -147,7 +147,7 @@
       <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0127-how-to-use-hugo/</guid>
-      <description>Hugo をインストールする homebrewを利用した方法が、一般的なようでしたが、Install hugoを参考にGitHubからバイナリをダウンロ</description>
+      <description>Hugoを利用する際の忘備録</description>
     </item>
     
   </channel>

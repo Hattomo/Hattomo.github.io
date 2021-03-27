@@ -12,7 +12,7 @@
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0213-new-post/</guid>
-      <description>はじめに Hugoで新しいポストを作成するコマンドは、 hugo new [path to new file] ですが、私はフォルダを分けているので hugo new posts/21/Q1/0213-[title] のような長いパスになっていました。</description>
+      <description>hugoのポストをシェルで新規作成する方法</description>
     </item>
     
   </channel>

@@ -12,7 +12,7 @@
       <pubDate>Tue, 23 Feb 2021 11:05:19 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</guid>
-      <description>はじめに WindowsでもmacOS風のキーバインドを利用したいことがあると思います。そのための設定です。レジストリとAutoHotKeyを</description>
+      <description>WindowsでmacOS風のキーバインドや便利なショートカットの設定をAutoHotKeyを利用して設定する方法</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
       
       <guid>https://hattomo.github.io/posts/21/q1/0215-karabiner-office/</guid>
-      <description>はじめに macOS上では、emacsのキーバインドが一部利用できて便利です。このキーバインドは大抵のテキストエデットアプリには、対応している</description>
+      <description>macOSのMicrosoft OfficeでEmacs風キーバインドを設定する</description>
     </item>
     
   </channel>
