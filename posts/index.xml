@@ -5,13 +5,22 @@
     <link>https://hattomo.github.io/posts/</link>
     <description>Recent content in Posts on Hattomo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Apr 2021 09:36:35 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 23:22:08 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UbuntuをアップデートしたらNvidia Driverが壊れた</title>
+      <link>https://hattomo.github.io/posts/21/q2/0416-fix-nvidia-driver-on-ubuntu/</link>
+      <pubDate>Fri, 16 Apr 2021 23:22:08 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/21/q2/0416-fix-nvidia-driver-on-ubuntu/</guid>
+      <description>UbuntuをアップデートしたらNvidia Driverが壊れた際の修正方法</description>
+    </item>
+    
     <item>
       <title>Ubuntuでキーバインドをカスタマイズする</title>
-      <link>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds.md/</link>
+      <link>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds/</link>
       <pubDate>Tue, 13 Apr 2021 09:36:35 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds.md/</guid>
+      <guid>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds/</guid>
       <description>Ubuntuでキーバインドをカスタムする方法</description>
     </item>
     
