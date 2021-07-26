@@ -9,7 +9,7 @@
 <meta name=author content>
 <link rel=canonical href=https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/>
 <meta name=google-site-verification content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.102f1d8b60edb3a3c2cfa61d67c2734d132fb22ccd85932db5934b4a0db9ae95.css integrity="sha256-EC8di2Dts6PCz6YdZ8JzTRMvsizNhZMttZNLSg25rpU=" rel="preload stylesheet" as=style>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.d9663eee688522aab556a54910ea9ddbb7f24a769bd7680780fd49cbd0a3b827.css integrity="sha256-2WY+7miFIqq1VqVJEOqd27fySnab12gHgP1Jy9CjuCc=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://hattomo.github.io/images/favicon/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://hattomo.github.io/images/favicon/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=https://hattomo.github.io/images/favicon/favicon-32x32.png>
@@ -18,6 +18,7 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.86.0">
+<link rel=stylesheet href=https://hattomo.github.io/css/syntax.css>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-352SDD97BP"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-352SDD97BP',{anonymize_ip:!1})}</script>
 <meta property="og:title" content="2段階SSH、VNC、RDPを行う方法">
@@ -29,7 +30,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="2段階SSH、VNC、RDPを行う方法">
 <meta name=twitter:description content="2段階SSH、VNC(Vino)、RDP(xrdp)を行う方法や設定についてそれぞれ解説していきます">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://hattomo.github.io/posts/"},{"@type":"ListItem","position":2,"name":"2段階SSH、VNC、RDPを行う方法","item":"https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://hattomo.github.io/posts/"},{"@type":"ListItem","position":3,"name":"2段階SSH、VNC、RDPを行う方法","item":"https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/"}]}</script>
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"2段階SSH、VNC、RDPを行う方法","name":"2段階SSH、VNC、RDPを行う方法","description":"2段階SSH、VNC(Vino)、RDP(xrdp)を行う方法や設定についてそれぞれ解説していきます","keywords":[""],"articleBody":"はじめに コンピューターにリモートアクセスを行いたいことがあります。この際の方法やTipsをまとめてみました。扱う方法はSSH,VNC,RDPです。\nSSHでリモート接続を行う SSHで外部からリモート接続を行う場合、セキュリティを考えると、多段階認証を行ったほうが良いです。多段階認証のサーバーは存在するとして、設定方法を記します。コンピュータの名前は以下のようにします。\n 踏み台サーバー ターゲット(SSHでアクセスされるコンピュータ) クライアント(SSHでアクセスするコンピュータ)  下準備としてすべてのコンピュータにSSHをインストールし、ipアドレスの固定を行ってあるものとします。 またクライアント以外のOSはUbuntu 20.04を前提としますがほかのOSでもほぼ同様に可能です。\n鍵を生成する SSHでは、パスワードによる認証もできますが、セキュリティを鑑みると公開鍵認証による認証を利用するべきです。そこで公開鍵認証を行うための鍵を生成していきます。RSA,ed25519が現在よく利用されています。ed25519は、楕円曲線を利用した暗号でとりあえずこれを利用しておけば問題ありませんが、レガシーな環境ではed25519に対応していないOpen sshを利用していることがあり、そのような際にはRSAで鍵を作成します。RSAで鍵を生成する際には鍵長を4096以上に指定します。\n# ed25519 $ ssh-keygen -t ed25519 -C \"\" -f ~/.ssh/id_ed25519 # RSA (legacy) $ ssh-keygen -t rsa -b 4096 -C \"\" -f ~/.ssh/id_rsa -Cオプションはコメントです。これをつけないと自動的に鍵を作成したコンピュータのusername@hostnameとコメントが入ってしまいます。ユーザー名とホスト名が入ってしまっても問題はないケースがほとんどだと思いますが、個人的に気になるのでコメントを消しています。GitHubの公式ドキュメントでは、メールアドレスをコメントにしています。-fオプションは、鍵の生成されるパスです。\nコマンドを実行するとパスワードを聞かれますが、そのままEnterキーを押します。 コマンドが完了したら、指定したパスに鍵があることを確認します。*.pubが公開鍵であり、拡張子がないものが秘密鍵です。秘密鍵は外部に漏れることのないように管理する必要があります。\n鍵を踏み台サーバーに配置する 生成された公開鍵を踏み台サーバーの~/.ssh/authorized_keysに追記します。ファイルがなければ新たに作成します。公開鍵の内容をただコピー＆ペーストすればよいです。鍵を移動させる方法については、USBメモリなどで直接運ぶ方法、scpコマンドを利用する方法とssh-copy-idを利用する方法があります。可能であれば、ssh-copy-idを利用したほうが簡単です。\n# scp scp [client pub key path] server_username@server_hostname:[path_on_host] # ssh-copy-id ssh-copy-id -i [client pub key path] server_username@server_hostname 鍵が、authorized_keysに書き込まれたことを確認しましょう。\n鍵生成から、鍵を配置するまでの一連の流れをターゲットに対しても行います。\nConfigに設定を追記する クライアントの~/.ssh/configファイルに設定を記述しておくことで短いコマンドでSSHを行うことができます。\nServerAliveInterval 120 ServerAliveCountMax 3 Host server Hostname [ip addr or hostname] User [server_username] Port [port number] IdentityFile [path to private ssh key for server] Host terget Hostname [ip addr or hostname] User [terget_username] Port [port number] IdentityFile [path to private ssh key for terget] ProxyCommand ssh server -W %h:%p ServerAliveIntervalとServerAliveCountMaxは接続が切れないようにする設定です。sshでコマンドをしばらくたたかないと自動的に接続が切れてしまいます。それを防ぐためにsshd側が一定期間クライアントと通信していないときに、応答確認を行います。ServerAliveIntervalはその確認する感覚の秒数であり、ServerAliveCountMaxは試行回数です。\n最終的に以下のコマンドでターゲットへのsshが完了すれば成功です。\n$ ssh terget ターゲットのsshdの設定 ServerAliveIntervalとServerAliveCountMaxのような設定をターゲットのsshd側ですることもできます。ターゲットの/etc/ssh/sshd_configを開き、\nClientAliveInterval 120 ClientAliveCountMax 3 を追記します。設定を反映するには、\nsudo service sshd restart でサービスを再起動します。\nVNCとRDP 晴れてSSHを行うことができるようになったわけですが、コマンドだけではなくディストップ環境が欲しい時もあります。そのようなときに活躍するものが、VNCとRDP(リモートデスクトッププロトコル)です。両方、リモートからデスクトップ環境を利用すために作られたものですが、実現する仕組みが異なっています。VNCは画面そのものを画像として送信しています。画像を送信する方法はRDPの方法より、重い一方、UbuntuやmacOSにはデフォルトでVNCを行うためのソフトが入っており、導入が比較的簡単です。RDPはMicrosoftが開発した方法で、画面の描画情報を送信(ウインドウの場所などの構成情報を送るイメージ)します。そのため、VNCと比べて軽いです。\nVNCを利用する Ubuntuには、Vinoと呼ばれるVNCサーバーが入っています。設定方法はここを参考にしました。 しかし、今回は2段階ssh環境でのVNCです。ターゲットに直接アクセスすることができません。そこでsshのポートフォワーディングを使います。これは、ターゲットの特定のポートをクライアントの任意のポートと接続できる機能です。先ほどのconfigファイルのtergetに以下を追記します。\nLocalForward 5900 localhost:5900 これでターゲットの5900ポートをクライアントの5900に接続することができました。 よって接続はlocalhost:5900に対して行います。 また、私の環境では、\n$ gsettings set org.gnome.Vino require-encryption false を行って暗号化の設定をoffにしても暗号化が解除されませんでした。 設定を変更するdconfをインストールします。\n$ sudo apt install dconf-editor ソフトを起動し、org.gnome.desktop.remote-access require-encryptionをfalseに設定します。これでもう一度接続すると接続することができました。VNCの暗号化をoffにしてしまってもssh自体が暗号化されているため、安全に通信することができます。逆に言えば、sshを使っていなければ暗号化を止めてしまったため危険です。\nRDPを利用する $ sudo apt install xrdp 2段階sshの環境でのRDPは上のVNCの場合と同様にポートフォワーディングが必要です。xrdpで利用するポートはデフォルトで、3389です。VNCの際と同じように設定を行います。\nLocalForward 3389 localhost:3389 localhost:3389にRDPクライアントを接続すれば、利用することができます。クライアントソフトについては、ここが参考になります。\n","wordCount":"2769","inLanguage":"en","datePublished":"2021-07-08T23:27:45+09:00","dateModified":"2021-07-11T21:30:48+09:00","author":[{"@type":"Person","name":""}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/"},"publisher":{"@type":"Organization","name":"Hattomo","logo":{"@type":"ImageObject","url":"https://hattomo.github.io/images/favicon/favicon.ico"}}}</script>
 </head>
 <body id=top>
@@ -41,7 +42,7 @@
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=https://hattomo.github.io/ accesskey=h title="Hattomo (Alt + H)">Hattomo</a>
+<a href=https://hattomo.github.io accesskey=h title="Hattomo (Alt + H)">Hattomo</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -79,7 +80,7 @@
 <main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=https://hattomo.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://hattomo.github.io/posts/>Posts</a></div>
+<div class=breadcrumbs><a href=https://hattomo.github.io>Home</a>&nbsp;»&nbsp;<a href=https://hattomo.github.io/posts/>Posts</a></div>
 <h1 class=post-title>
 2段階SSH、VNC、RDPを行う方法
 </h1>
@@ -208,7 +209,7 @@ ClientAliveCountMax 3
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://hattomo.github.io/>Hattomo</a></span>
+<span>&copy; 2021 <a href=https://hattomo.github.io>Hattomo</a></span>
 <span>&#183;</span>
 <span>
 Powered by
@@ -216,7 +217,7 @@ Powered by
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod (forked)</a>
 </span>
 <span>&#183;</span>
-<span><a href=https://hattomo.github.io/privacypolicy>Privacy Policy</a></span>
+<span><a href=https://hattomo.github.ioprivacypolicy>Privacy Policy</a></span>
 </footer>
 <a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
 <button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
