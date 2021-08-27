@@ -8,19 +8,19 @@
     <lastBuildDate>Fri, 12 Mar 2021 00:11:07 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PythonでLINEトークの履歴を解析し、グラフを生成する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0304-python-line/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0304-python-line/</link>
       <pubDate>Fri, 12 Mar 2021 00:11:07 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0304-python-line/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0304-python-line/</guid>
       <description>PythonでLINEトークの履歴を解析し、グラフを生成する</description>
     </item>
     
     <item>
       <title>Useful Python commands</title>
-      <link>https://hattomo.github.io/posts/21/q1/0210-python-commands/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</link>
       <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0210-python-commands/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</guid>
       <description>Memolize Python useful tools</description>
     </item>
     

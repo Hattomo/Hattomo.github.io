@@ -8,172 +8,172 @@
     <lastBuildDate>Thu, 08 Jul 2021 23:27:45 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2段階SSH、VNC、RDPを行う方法</title>
-      <link>https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/</link>
+      <link>https://hattomo.github.io/posts/main/21/q3/0708-remote-access-settings/</link>
       <pubDate>Thu, 08 Jul 2021 23:27:45 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q3/0708-remote-access-settings/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q3/0708-remote-access-settings/</guid>
       <description>2段階SSH、VNC(Vino)、RDP(xrdp)を行う方法や設定についてそれぞれ解説していきます</description>
     </item>
     
     <item>
       <title>UbuntuをアップデートしたらNvidia Driverが壊れた</title>
-      <link>https://hattomo.github.io/posts/21/q2/0416-fix-nvidia-driver-on-ubuntu/</link>
+      <link>https://hattomo.github.io/posts/main/21/q2/0416-fix-nvidia-driver-on-ubuntu/</link>
       <pubDate>Fri, 16 Apr 2021 23:22:08 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q2/0416-fix-nvidia-driver-on-ubuntu/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q2/0416-fix-nvidia-driver-on-ubuntu/</guid>
       <description>UbuntuをアップデートしたらNvidia Driverが壊れた際の修正方法</description>
     </item>
     
     <item>
       <title>Ubuntuでキーバインドをカスタマイズする</title>
-      <link>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds/</link>
+      <link>https://hattomo.github.io/posts/main/21/q2/0413-ubuntu-keybinds/</link>
       <pubDate>Tue, 13 Apr 2021 09:36:35 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q2/0413-ubuntu-keybinds/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q2/0413-ubuntu-keybinds/</guid>
       <description>Ubuntuでキーバインドをカスタムする方法</description>
     </item>
     
     <item>
       <title>Useful Docker Commands</title>
-      <link>https://hattomo.github.io/posts/21/q1/0325-docker-commands/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0325-docker-commands/</link>
       <pubDate>Thu, 25 Mar 2021 15:10:58 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0325-docker-commands/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0325-docker-commands/</guid>
       <description>Useful Docker Commands</description>
     </item>
     
     <item>
       <title>Chrome Extensionでメディアコントローラーを作る</title>
-      <link>https://hattomo.github.io/posts/21/q1/0313-chrome-extension/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0313-chrome-extension/</link>
       <pubDate>Sat, 13 Mar 2021 13:04:08 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0313-chrome-extension/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0313-chrome-extension/</guid>
       <description>Chrome Extensionでローカルにあるビデオや音声ファイルのメディアコントローラーの拡張を作成していきます!</description>
     </item>
     
     <item>
       <title>Youtubeの動画をダウンロードするyoutube-dlを試す</title>
-      <link>https://hattomo.github.io/posts/21/q1/0312-youtube/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0312-youtube/</link>
       <pubDate>Fri, 12 Mar 2021 09:20:07 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0312-youtube/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0312-youtube/</guid>
       <description>Youtubeの動画をダウンロードするyoutube-dlを試す</description>
     </item>
     
     <item>
       <title>PythonでLINEトークの履歴を解析し、グラフを生成する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0304-python-line/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0304-python-line/</link>
       <pubDate>Fri, 12 Mar 2021 00:11:07 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0304-python-line/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0304-python-line/</guid>
       <description>PythonでLINEトークの履歴を解析し、グラフを生成する</description>
     </item>
     
     <item>
       <title>経営工学についてのメモ1</title>
-      <link>https://hattomo.github.io/posts/21/q1/0227-management-1/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0227-management-1/</link>
       <pubDate>Mon, 01 Mar 2021 00:13:52 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0227-management-1/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0227-management-1/</guid>
       <description>経営について学んだことのメモです。企業経営の基本的なとこです。</description>
     </item>
     
     <item>
       <title>Auto HotkeyでMac風キーバインド！</title>
-      <link>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0223-autohotkey-mac/</link>
       <pubDate>Tue, 23 Feb 2021 11:05:19 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0223-autohotkey-mac/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0223-autohotkey-mac/</guid>
       <description>WindowsでmacOS風のキーバインドや便利なショートカットの設定をAutoHotKeyを利用して設定する方法</description>
     </item>
     
     <item>
       <title>macOSのOfficeでEmacsキーバインド</title>
-      <link>https://hattomo.github.io/posts/21/q1/0215-karabiner-office/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0215-karabiner-office/</link>
       <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0215-karabiner-office/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0215-karabiner-office/</guid>
       <description>macOSのMicrosoft OfficeでEmacs風キーバインドを設定する</description>
     </item>
     
     <item>
       <title>Hugoで読了時間や文字数表示がおかしい</title>
-      <link>https://hattomo.github.io/posts/21/q1/0214-hugo-reading-time/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0214-hugo-reading-time/</link>
       <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0214-hugo-reading-time/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0214-hugo-reading-time/</guid>
       <description>Hugoで読了時間や文字数表示がおかしい場合の対処法</description>
     </item>
     
     <item>
       <title>Flutterが使える機能の管理</title>
-      <link>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0214-flutter-chaneel/</link>
       <pubDate>Sun, 14 Feb 2021 17:27:04 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0214-flutter-chaneel/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0214-flutter-chaneel/</guid>
       <description>Flutterのチャンネルで使える機能はどのように管理されているか</description>
     </item>
     
     <item>
       <title>WindowsのハードウェアクロックをUTCで管理する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-mangae-hardware-clock-windows-utc/</link>
       <pubDate>Sat, 13 Feb 2021 19:18:41 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-mangae-hardware-clock-windows-utc/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-mangae-hardware-clock-windows-utc/</guid>
       <description>WindowsのハードウェアクロックをUTCで管理する方法</description>
     </item>
     
     <item>
       <title>シェルでHugoのポストを新規作成する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-new-post/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</link>
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-new-post/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</guid>
       <description>hugoのポストをシェルで新規作成する方法</description>
     </item>
     
     <item>
       <title>GitHub CodespacesでHugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
       <description>GitHub Codespaces is all new way to coding, I tried it to write hugo blog and it was great exprience.</description>
     </item>
     
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
     
     <item>
       <title>HugoでGoogle Analytics 4を利用する</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-new-google-analytics-4/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-new-google-analytics-4/</link>
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-new-google-analytics-4/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-new-google-analytics-4/</guid>
       <description>Hugoで新しくなったGoogleAnalyticsを使う</description>
     </item>
     
     <item>
       <title>VSCodeのデフォルトフォントを確認する方法</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-vscode-default-font/</link>
       <pubDate>Sat, 13 Feb 2021 10:41:23 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-vscode-default-font/</guid>
       <description>VSCodeのデフォルトのフォントはOSごとに何が設定されているか調査する</description>
     </item>
     
     <item>
       <title>Useful Python commands</title>
-      <link>https://hattomo.github.io/posts/21/q1/0210-python-commands/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</link>
       <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0210-python-commands/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</guid>
       <description>Memolize Python useful tools</description>
     </item>
     
@@ -188,10 +188,10 @@
     
     <item>
       <title>How to install and use Hugo</title>
-      <link>https://hattomo.github.io/posts/21/q1/0127-how-to-use-hugo/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0127-how-to-use-hugo/</link>
       <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0127-how-to-use-hugo/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0127-how-to-use-hugo/</guid>
       <description>Hugoを利用する際の忘備録</description>
     </item>
     

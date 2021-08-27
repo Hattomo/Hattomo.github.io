@@ -8,10 +8,10 @@
     <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-github-actions-hugo-lastmod/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
     

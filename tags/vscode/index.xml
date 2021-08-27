@@ -8,10 +8,10 @@
     <lastBuildDate>Sat, 13 Feb 2021 10:41:23 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VSCodeのデフォルトフォントを確認する方法</title>
-      <link>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</link>
+      <link>https://hattomo.github.io/posts/main/21/q1/0213-vscode-default-font/</link>
       <pubDate>Sat, 13 Feb 2021 10:41:23 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/21/q1/0213-vscode-default-font/</guid>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0213-vscode-default-font/</guid>
       <description>VSCodeのデフォルトのフォントはOSごとに何が設定されているか調査する</description>
     </item>
     
