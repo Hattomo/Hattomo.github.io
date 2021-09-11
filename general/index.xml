@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Generals on Hattomo</title>
+    <link>https://hattomo.github.io/general/</link>
+    <description>Recent content in Generals on Hattomo</description>
+    <image>
+      <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>
+      <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Jan 2021 23:42:50 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://hattomo.github.io/general/privacypolicy/</link>
+      <pubDate>Wed, 27 Jan 2021 23:42:50 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/general/privacypolicy/</guid>
+      <description>アクセス解析ツールについて 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。 このGoogle</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://hattomo.github.io/general/about/</link>
+      <pubDate>Sun, 24 Jan 2021 11:44:54 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/general/about/</guid>
+      <description>Hi, there! 👋</description>
+    </item>
+    
+  </channel>
+</rss>

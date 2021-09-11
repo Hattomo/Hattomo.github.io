@@ -4,6 +4,10 @@
     <title>app on Hattomo</title>
     <link>https://hattomo.github.io/tags/app/</link>
     <description>Recent content in app on Hattomo</description>
+    <image>
+      <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>
+      <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 23 Feb 2021 11:05:19 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>

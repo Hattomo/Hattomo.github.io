@@ -4,6 +4,10 @@
     <title>flutter on Hattomo</title>
     <link>https://hattomo.github.io/tags/flutter/</link>
     <description>Recent content in flutter on Hattomo</description>
+    <image>
+      <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>
+      <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 14 Feb 2021 17:27:04 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
     <item>

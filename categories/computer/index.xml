@@ -4,6 +4,10 @@
     <title>computer on Hattomo</title>
     <link>https://hattomo.github.io/categories/computer/</link>
     <description>Recent content in computer on Hattomo</description>
+    <image>
+      <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>
+      <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 08 Jul 2021 23:27:45 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
     <item>

@@ -4,6 +4,10 @@
     <title>ci on Hattomo</title>
     <link>https://hattomo.github.io/tags/ci/</link>
     <description>Recent content in ci on Hattomo</description>
+    <image>
+      <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>
+      <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
