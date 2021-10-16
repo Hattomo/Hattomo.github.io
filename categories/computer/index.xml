@@ -9,7 +9,16 @@
       <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Sep 2021 11:08:38 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 10:50:05 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vigoole SSD Enclosure Review</title>
+      <link>https://hattomo.github.io/posts/main/21/q4/1016-vigoole-ssd-enclosure-review/</link>
+      <pubDate>Sat, 16 Oct 2021 10:50:05 +0000</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/main/21/q4/1016-vigoole-ssd-enclosure-review/</guid>
+      <description>VigooleのSSDケースHE-C326を購入したのでレビューします</description>
+    </item>
+    
     <item>
       <title>音声認識のための音声データの下処理</title>
       <link>https://hattomo.github.io/posts/main/21/q3/0912-preprocessing-audio-data/</link>
