@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>[2021 Hattomo](/general/about#license)</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 02:48:47 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 13:08:36 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASRの言語モデルの統合方法</title>
+      <link>https://hattomo.github.io/posts/main/22/q4/1102-asr-lm/jp/</link>
+      <pubDate>Mon, 07 Nov 2022 13:08:36 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/main/22/q4/1102-asr-lm/jp/</guid>
+      <description>音声認識(Audio Speech Recognition(ASR))の言語モデル(Language model(LM))の統合方法</description>
+    </item>
+    
     <item>
       <title>HuBERT</title>
       <link>https://hattomo.github.io/posts/main/22/q3/0715-hubert/jp/</link>
