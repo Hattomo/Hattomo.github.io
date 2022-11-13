@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>[2021 Hattomo](/general/about#license)</copyright>
-    <lastBuildDate>Mon, 07 Nov 2022 13:08:36 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Nov 2022 14:26:12 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rakuten Moblieの2022Q3決算を見て黒字化を考える</title>
+      <link>https://hattomo.github.io/posts/main/22/q4/1111-rakuten/jp/</link>
+      <pubDate>Sun, 13 Nov 2022 14:26:12 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/posts/main/22/q4/1111-rakuten/jp/</guid>
+      <description>Rakuten Moblieの2022Q3決算を見て黒字化を考える</description>
+    </item>
+    
     <item>
       <title>ASRの言語モデルの統合方法</title>
       <link>https://hattomo.github.io/posts/main/22/q4/1102-asr-lm/jp/</link>
