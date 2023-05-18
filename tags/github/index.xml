@@ -9,7 +9,7 @@
       <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>[2021 Hattomo](/general/about#license)</copyright>
+    <copyright>[2023 Hattomo](/general/about#license)</copyright>
     <lastBuildDate>Sat, 13 Feb 2021 05:18:27 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub CodespacesでHugoを利用したブログを書く</title>
