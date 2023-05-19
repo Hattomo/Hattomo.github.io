@@ -10,7 +10,7 @@
       <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>[2023 Hattomo](/general/about#license)</copyright>
+    <copyright>[2023 Hattomo](general/about_site/)</copyright>
     <lastBuildDate>Mon, 07 Nov 2022 13:08:36 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>computer</title>

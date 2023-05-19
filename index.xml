@@ -10,8 +10,20 @@
       <link>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>[2023 Hattomo](/general/about#license)</copyright>
-    <lastBuildDate>Sun, 13 Nov 2022 14:26:12 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>[2023 Hattomo](general/about_site/)</copyright>
+    <lastBuildDate>Fri, 19 May 2023 18:38:52 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About this websites</title>
+      <link>https://hattomo.github.io/general/about_site/</link>
+      <pubDate>Fri, 19 May 2023 18:38:52 +0900</pubDate>
+      
+      <guid>https://hattomo.github.io/general/about_site/</guid>
+      <description>About this websites This websites is a place to share and memorize what I have learned, experienced, and played in my life.
+Design I focus on things below to build this websites.
+😀Modern I am going to try new technology as possible as I can. For example, this websites use Webp format for image and it will be replaced Avif when all supported platform browsers below support Avif format.
+🦚Beautiful This websites has simple Beautiful light/dark mode UI.</description>
+    </item>
+    
     <item>
       <title>Rakuten Moblieの2022Q3決算を見て黒字化を考える</title>
       <link>https://hattomo.github.io/posts/main/22/q4/1111-rakuten/jp/</link>

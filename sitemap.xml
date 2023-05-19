@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hattomo.github.io/general/about_site/</loc>
+    <lastmod>2023-05-19T18:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://hattomo.github.io/general/</loc>
+    <lastmod>2023-05-19T18:38:52+09:00</lastmod>
+  </url><url>
     <loc>https://hattomo.github.io/</loc>
-    <lastmod>2023-05-19T03:01:04+09:00</lastmod>
+    <lastmod>2023-05-19T18:38:52+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/posts/main/</loc>
     <lastmod>2022-11-13T14:53:12+09:00</lastmod>
@@ -134,9 +140,6 @@
     <loc>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</loc>
     <lastmod>2021-02-12T18:50:35+09:00</lastmod>
   </url><url>
-    <loc>https://hattomo.github.io/general/</loc>
-    <lastmod>2023-05-19T03:01:04+09:00</lastmod>
-  </url><url>
     <loc>https://hattomo.github.io/general/privacypolicy/</loc>
     <lastmod>2021-02-24T14:59:21+09:00</lastmod>
   </url><url>
@@ -144,7 +147,7 @@
     <lastmod>2021-02-11T16:01:55+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/general/about/</loc>
-    <lastmod>2023-05-19T03:01:04+09:00</lastmod>
+    <lastmod>2023-05-19T18:38:52+09:00</lastmod>
   </url><url>
     <loc>https://hattomo.github.io/archives/</loc>
   </url><url>
