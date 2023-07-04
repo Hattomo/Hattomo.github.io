@@ -14,110 +14,110 @@
 </span></span><span class=line><span class=cl>00000018 38 00 5B E0 1D E0 38 E0
 </span></span><span class=line><span class=cl>00000020 38 E0 1D E0 00 00 00 00
 </span></span><span class=line><span class=cl>00000028
-</span></span></code></pre></div><p>この設定がどのような構造になっているについてはたくさんのブログがあるのでそちらを見てください。<br>再起動した際、設定が反映されていれば成功です。</p><h2 id=autohotkey-を設定する>AutoHotKey を設定する<a hidden class=anchor aria-hidden=true href=#autohotkey-を設定する>#</a></h2><h3 id=mac風キーバインドの設定>mac風キーバインドの設定<a hidden class=anchor aria-hidden=true href=#mac風キーバインドの設定>#</a></h3><p>AutoHotKeyをインストールし、<code>xxx.ahk</code>ファイルを作成します。<br>私のAutoHotKeyのバージョンは1.1.33.02です。</p><p>ahkファイルに設定を記述します。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>;; Eamcs 風のキーバインド
-</span></span><span class=line><span class=cl>F13 &amp; B::Send,{Blind}{Left}
-</span></span><span class=line><span class=cl>F13 &amp; N::Send,{Blind}{Down}
-</span></span><span class=line><span class=cl>F13 &amp; P::Send,{Blind}{Up}
-</span></span><span class=line><span class=cl>F13 &amp; F::Send,{Blind}{Right}
-</span></span><span class=line><span class=cl>F13 &amp; H::Send,{Blind}{Backspace}
-</span></span><span class=line><span class=cl>F13 &amp; D::Send,{Blind}{Delete}
-</span></span><span class=line><span class=cl>F13 &amp; A::Send,{Blind}{Home}
-</span></span><span class=line><span class=cl>F13 &amp; E::Send,{Blind}{End}
-</span></span><span class=line><span class=cl>F13 &amp; K::Send,+{End}{Shift}+{Delete}
-</span></span><span class=line><span class=cl>F13 &amp; Enter::Send,{Alt Down}{Shift Down}{Enter}{Alt Up}{Shift Up}
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;;バーチャルディスクトップ
-</span></span><span class=line><span class=cl>F13 &amp; Right::Send, {LCtrl up}{LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}
-</span></span><span class=line><span class=cl>F13 &amp; Left::Send, {LCtrl up}{LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
-</span></span><span class=line><span class=cl>F13 &amp; Up::Send, {LWin down}{Tab}{LWin up}
-</span></span><span class=line><span class=cl>F13 &amp; Down::Send, {LWin down}{Tab}{LWin up}
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; アプリの終了
-</span></span><span class=line><span class=cl>LCtrl &amp; Q::Send, {LAlt down}{F4}{LAlt up}
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;;chromeなどのタブの移動 →
-</span></span><span class=line><span class=cl>LAlt &amp; Right::	
-</span></span><span class=line><span class=cl>  If GetKeyState(&#34;LCtrl&#34;, &#34;P&#34;) {			
-</span></span><span class=line><span class=cl>    Send,^{Tab}
-</span></span><span class=line><span class=cl>  }
-</span></span><span class=line><span class=cl>Return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;;chromeなどのタブの移動 ←
-</span></span><span class=line><span class=cl>LAlt &amp; Left::	
-</span></span><span class=line><span class=cl>  If GetKeyState(&#34;LCtrl&#34;, &#34;P&#34;) {		
-</span></span><span class=line><span class=cl>    Send,+^{Tab}
-</span></span><span class=line><span class=cl>  }
-</span></span><span class=line><span class=cl>Return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; アプリ(ウインドウ)の切り替え
-</span></span><span class=line><span class=cl>LCtrl &amp; Tab::AltTab
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; 無変換で英語入力
-</span></span><span class=line><span class=cl>vk1C::
-</span></span><span class=line><span class=cl>imeoff:
-</span></span><span class=line><span class=cl>  Gosub, IMEGetstate
-</span></span><span class=line><span class=cl>  If (vimestate=0) {
-</span></span><span class=line><span class=cl>    Send, {vkf3}
-</span></span><span class=line><span class=cl>  }
-</span></span><span class=line><span class=cl>  return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; 変換で日本語入力
-</span></span><span class=line><span class=cl>vk1D::
-</span></span><span class=line><span class=cl>imeon:
-</span></span><span class=line><span class=cl>  Gosub, IMEGetstate
-</span></span><span class=line><span class=cl>  If (vimestate=1) {
-</span></span><span class=line><span class=cl>    Send, {vkf3}
-</span></span><span class=line><span class=cl>  }
-</span></span><span class=line><span class=cl>  return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; 上の二つのために必要
-</span></span><span class=line><span class=cl>IMEGetstate:
-</span></span><span class=line><span class=cl>  WinGet, vcurrentwindow, ID, A
-</span></span><span class=line><span class=cl>  vimestate := DllCall(&#34;user32.dll\SendMessageA&#34;, &#34;UInt&#34;, DllCall(&#34;imm32.dll\ImmGetDefaultIMEWnd&#34;, &#34;Uint&#34;, vcurrentwindow), &#34;UInt&#34;, 0x0283, &#34;Int&#34;, 0x0005, &#34;Int&#34;, 0)
-</span></span><span class=line><span class=cl>  return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;; メディアコントロール(macのファンクションキー)
-</span></span><span class=line><span class=cl>;; Insertと数字の同時押しで再現
-</span></span><span class=line><span class=cl>;; 数字でなくファンクションにしてもよいのでは？
-</span></span><span class=line><span class=cl>;; brightness up
-</span></span><span class=line><span class=cl>;;Insert &amp; 1
-</span></span><span class=line><span class=cl>;;Insert &amp; 2
-</span></span><span class=line><span class=cl>;; task view
-</span></span><span class=line><span class=cl>Insert &amp; 3::Send {LWin down}{Tab}{LWin up}      
-</span></span><span class=line><span class=cl>;; lanch pad
-</span></span><span class=line><span class=cl>;;Insert &amp; 4
-</span></span><span class=line><span class=cl>;; keyboard brightness up
-</span></span><span class=line><span class=cl>;;Insert &amp; 5,6
-</span></span><span class=line><span class=cl>;; play Back
-</span></span><span class=line><span class=cl>Insert &amp; 7::Send {Media_Prev}
-</span></span><span class=line><span class=cl>;; pause &amp; play
-</span></span><span class=line><span class=cl>Insert &amp; 8::Send {Media_Play_Pause}
-</span></span><span class=line><span class=cl>;; play next
-</span></span><span class=line><span class=cl>Insert &amp; 9::Send {Media_Next}
-</span></span><span class=line><span class=cl>;; volume mute
-</span></span><span class=line><span class=cl>Insert &amp; 0::Send {Volume_Mute}
-</span></span><span class=line><span class=cl>;; volume Down
-</span></span><span class=line><span class=cl>Insert &amp; -::Send {Volume_Down}
-</span></span><span class=line><span class=cl>;; volume up (if en chang e to =)
-</span></span><span class=line><span class=cl>Insert &amp; ^::Send {Volume_Up}
-</span></span></code></pre></div><h3 id=その他便利な設定>その他便利な設定<a hidden class=anchor aria-hidden=true href=#その他便利な設定>#</a></h3><p>どこかのサイトで見つけました。(忘れてしまいました)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>;;クリップボード内容をgoogle search
-</span></span><span class=line><span class=cl>LAlt &amp; s::
-</span></span><span class=line><span class=cl>	If GetKeyState(&#34;Ctrl&#34;, &#34;P&#34;) {
-</span></span><span class=line><span class=cl>		send, ^c
-</span></span><span class=line><span class=cl>		Clipboard := RegExReplace(Clipboard, &#34;^ +|\r\n| +$&#34;, &#34;&#34;)
-</span></span><span class=line><span class=cl>		Run, http://www.google.co.jp/search?q=%Clipboard%
-</span></span><span class=line><span class=cl>	}
-</span></span><span class=line><span class=cl>Return
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>;;クリップボード内容をgoogle translate
-</span></span><span class=line><span class=cl>LAlt &amp; t::
-</span></span><span class=line><span class=cl>	If GetKeyState(&#34;Ctrl&#34;, &#34;P&#34;) {
-</span></span><span class=line><span class=cl>		send, ^c
-</span></span><span class=line><span class=cl>		Clipboard := RegExReplace(Clipboard, &#34;^ +|\r\n| +$&#34;, &#34;&#34;)
-</span></span><span class=line><span class=cl>		Run, https://translate.google.com/#view=home&amp;op=translate&amp;sl=en&amp;tl=ja&amp;text=%Clipboard%
-</span></span><span class=line><span class=cl>	}
-</span></span><span class=line><span class=cl>Return
-</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://hattomo.github.io/tags/windows/>windows</a></li><li><a href=https://hattomo.github.io/tags/app/>app</a></li></ul><nav class=paginav><a class=prev href=https://hattomo.github.io/posts/main/21/q1/0227-management-1/><span class=title>« Next</span><br><span>経営工学についてのメモ1</span></a>
+</span></span></code></pre></div><p>この設定がどのような構造になっているについてはたくさんのブログがあるのでそちらを見てください。<br>再起動した際、設定が反映されていれば成功です。</p><h2 id=autohotkey-を設定する>AutoHotKey を設定する<a hidden class=anchor aria-hidden=true href=#autohotkey-を設定する>#</a></h2><h3 id=mac風キーバインドの設定>mac風キーバインドの設定<a hidden class=anchor aria-hidden=true href=#mac風キーバインドの設定>#</a></h3><p>AutoHotKeyをインストールし、<code>xxx.ahk</code>ファイルを作成します。<br>私のAutoHotKeyのバージョンは1.1.33.02です。</p><p>ahkファイルに設定を記述します。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-ahk data-lang=ahk><span class=line><span class=cl><span class=c1>;; Eamcs 風のキーバインド</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>B</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Left</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>N</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Down</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>P</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Up</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>F</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Right</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>H</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Backspace</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>D</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Delete</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>A</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>Home</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>E</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Blind</span><span class=p>}{</span><span class=n>End</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>K</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span><span class=o>+</span><span class=p>{</span><span class=n>End</span><span class=p>}{</span><span class=n>Shift</span><span class=p>}</span><span class=o>+</span><span class=p>{</span><span class=n>Delete</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>Enter</span><span class=o>::</span><span class=n>Send</span><span class=p>,{</span><span class=n>Alt</span> <span class=n>Down</span><span class=p>}{</span><span class=n>Shift</span> <span class=n>Down</span><span class=p>}{</span><span class=n>Enter</span><span class=p>}{</span><span class=n>Alt</span> <span class=n>Up</span><span class=p>}{</span><span class=n>Shift</span> <span class=n>Up</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;;バーチャルディスクトップ</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>Right</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>LCtrl</span> <span class=n>up</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>down</span><span class=p>}{</span><span class=n>LCtrl</span> <span class=n>down</span><span class=p>}{</span><span class=n>Right</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>up</span><span class=p>}{</span><span class=n>LCtrl</span> <span class=n>up</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>Left</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>LCtrl</span> <span class=n>up</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>down</span><span class=p>}{</span><span class=n>LCtrl</span> <span class=n>down</span><span class=p>}{</span><span class=n>Left</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>up</span><span class=p>}{</span><span class=n>LCtrl</span> <span class=n>up</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>Up</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>LWin</span> <span class=n>down</span><span class=p>}{</span><span class=n>Tab</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>up</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>F13</span> <span class=o>&amp;</span> <span class=n>Down</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>LWin</span> <span class=n>down</span><span class=p>}{</span><span class=n>Tab</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>up</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; アプリの終了</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LCtrl</span> <span class=o>&amp;</span> <span class=n>Q</span><span class=o>::</span><span class=n>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>LAlt</span> <span class=n>down</span><span class=p>}{</span><span class=n>F4</span><span class=p>}{</span><span class=n>LAlt</span> <span class=n>up</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;;chromeなどのタブの移動 →</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LAlt</span> <span class=o>&amp;</span> <span class=n>Right</span><span class=o>::</span>	<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>If </span><span class=nf>GetKeyState</span><span class=p>(</span><span class=s>&#34;LCtrl&#34;</span><span class=p>,</span> <span class=s>&#34;P&#34;</span><span class=p>)</span> <span class=p>{</span>			<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>    <span class=nb>Send</span><span class=p>,</span><span class=o>^</span><span class=p>{</span><span class=n>Tab</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>Return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;;chromeなどのタブの移動 ←</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LAlt</span> <span class=o>&amp;</span> <span class=n>Left</span><span class=o>::</span>	<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>If </span><span class=nf>GetKeyState</span><span class=p>(</span><span class=s>&#34;LCtrl&#34;</span><span class=p>,</span> <span class=s>&#34;P&#34;</span><span class=p>)</span> <span class=p>{</span>		<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>    <span class=nb>Send</span><span class=p>,</span><span class=o>+^</span><span class=p>{</span><span class=n>Tab</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>Return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; アプリ(ウインドウ)の切り替え</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LCtrl</span> <span class=o>&amp;</span> <span class=n>Tab</span><span class=o>::</span><span class=n>AltTab</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; 無変換で英語入力</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nl>vk1C::</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nl>imeoff:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>Gosub</span><span class=p>,</span> <span class=n>IMEGetstate</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=n>If</span> <span class=p>(</span><span class=n>vimestate</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span> <span class=p>{</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>    <span class=nb>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>vkf3</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; 変換で日本語入力</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nl>vk1D::</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nl>imeon:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>Gosub</span><span class=p>,</span> <span class=n>IMEGetstate</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=n>If</span> <span class=p>(</span><span class=n>vimestate</span><span class=o>=</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>    <span class=nb>Send</span><span class=p>,</span> <span class=p>{</span><span class=n>vkf3</span><span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; 上の二つのために必要</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nl>IMEGetstate:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>WinGet</span><span class=p>,</span> <span class=n>vcurrentwindow</span><span class=p>,</span> <span class=n>ID</span><span class=p>,</span> <span class=n>A</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=n>vimestate</span> <span class=o>:=</span> <span class=nf>DllCall</span><span class=p>(</span><span class=s>&#34;user32.dll\SendMessageA&#34;</span><span class=p>,</span> <span class=s>&#34;UInt&#34;</span><span class=p>,</span> <span class=nf>DllCall</span><span class=p>(</span><span class=s>&#34;imm32.dll\ImmGetDefaultIMEWnd&#34;</span><span class=p>,</span> <span class=s>&#34;Uint&#34;</span><span class=p>,</span> <span class=n>vcurrentwindow</span><span class=p>),</span> <span class=s>&#34;UInt&#34;</span><span class=p>,</span> <span class=mh>0x0283</span><span class=p>,</span> <span class=s>&#34;Int&#34;</span><span class=p>,</span> <span class=mh>0x0005</span><span class=p>,</span> <span class=s>&#34;Int&#34;</span><span class=p>,</span> <span class=mi>0</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>  <span class=nb>return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; メディアコントロール(macのファンクションキー)
+</span></span></span><span class=line><span class=cl><span class=c1>;; Insertと数字の同時押しで再現
+</span></span></span><span class=line><span class=cl><span class=c1>;; 数字でなくファンクションにしてもよいのでは？
+</span></span></span><span class=line><span class=cl><span class=c1>;; brightness up
+</span></span></span><span class=line><span class=cl><span class=c1>;;Insert &amp; 1
+</span></span></span><span class=line><span class=cl><span class=c1>;;Insert &amp; 2
+</span></span></span><span class=line><span class=cl><span class=c1>;; task view</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=mi>3</span><span class=o>::</span><span class=n>Send</span> <span class=p>{</span><span class=n>LWin</span> <span class=n>down</span><span class=p>}{</span><span class=n>Tab</span><span class=p>}{</span><span class=n>LWin</span> <span class=n>up</span><span class=p>}</span><span class=c1>      
+</span></span></span><span class=line><span class=cl><span class=c1>;; lanch pad
+</span></span></span><span class=line><span class=cl><span class=c1>;;Insert &amp; 4
+</span></span></span><span class=line><span class=cl><span class=c1>;; keyboard brightness up
+</span></span></span><span class=line><span class=cl><span class=c1>;;Insert &amp; 5,6
+</span></span></span><span class=line><span class=cl><span class=c1>;; play Back</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=mi>7</span><span class=o>::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Media_Prev</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; pause &amp; play</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=mi>8</span><span class=o>::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Media_Play_Pause</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; play next</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=mi>9</span><span class=o>::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Media_Next</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; volume mute</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=mi>0</span><span class=o>::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Volume_Mute</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; volume Down</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=o>-::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Volume_Down</span><span class=p>}</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;; volume up (if en chang e to =)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nf>Insert</span> <span class=o>&amp;</span> <span class=o>^::</span><span class=n>Send</span> <span class=p>{</span><span class=n>Volume_Up</span><span class=p>}</span><span class=err>
+</span></span></span></code></pre></div><h3 id=その他便利な設定>その他便利な設定<a hidden class=anchor aria-hidden=true href=#その他便利な設定>#</a></h3><p>どこかのサイトで見つけました。(忘れてしまいました)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-ahk data-lang=ahk><span class=line><span class=cl><span class=c1>;;クリップボード内容をgoogle search</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LAlt</span> <span class=o>&amp;</span> <span class=n>s</span><span class=o>::</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>	<span class=nb>If </span><span class=nf>GetKeyState</span><span class=p>(</span><span class=s>&#34;Ctrl&#34;</span><span class=p>,</span> <span class=s>&#34;P&#34;</span><span class=p>)</span> <span class=p>{</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nb>send</span><span class=p>,</span> <span class=o>^</span><span class=n>c</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nv>Clipboard</span> <span class=o>:=</span> <span class=nf>RegExReplace</span><span class=p>(</span><span class=nv>Clipboard</span><span class=p>,</span> <span class=s>&#34;^ +|\r\n| +$&#34;</span><span class=p>,</span> <span class=s>&#34;&#34;</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nb>Run</span><span class=p>,</span> <span class=n>http</span><span class=o>://</span><span class=n>www</span><span class=o>.</span><span class=n>google</span><span class=o>.</span><span class=n>co</span><span class=o>.</span><span class=n>jp</span><span class=o>/</span><span class=n>search</span><span class=o>?</span><span class=n>q</span><span class=o>=</span><span class=nv>%Clipboard%</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>	<span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>Return</span><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>;;クリップボード内容をgoogle translate</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=n>LAlt</span> <span class=o>&amp;</span> <span class=n>t</span><span class=o>::</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>	<span class=nb>If </span><span class=nf>GetKeyState</span><span class=p>(</span><span class=s>&#34;Ctrl&#34;</span><span class=p>,</span> <span class=s>&#34;P&#34;</span><span class=p>)</span> <span class=p>{</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nb>send</span><span class=p>,</span> <span class=o>^</span><span class=n>c</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nv>Clipboard</span> <span class=o>:=</span> <span class=nf>RegExReplace</span><span class=p>(</span><span class=nv>Clipboard</span><span class=p>,</span> <span class=s>&#34;^ +|\r\n| +$&#34;</span><span class=p>,</span> <span class=s>&#34;&#34;</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>		<span class=nb>Run</span><span class=p>,</span> <span class=n>https</span><span class=o>://</span><span class=n>translate</span><span class=o>.</span><span class=n>google</span><span class=o>.</span><span class=n>com</span><span class=o>/</span><span class=n>#view</span><span class=o>=</span><span class=n>home</span><span class=o>&amp;</span><span class=n>op</span><span class=o>=</span><span class=n>translate</span><span class=o>&amp;</span><span class=n>sl</span><span class=o>=</span><span class=n>en</span><span class=o>&amp;</span><span class=n>tl</span><span class=o>=</span><span class=n>ja</span><span class=o>&amp;</span><span class=n>text</span><span class=o>=</span><span class=nv>%Clipboard%</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>	<span class=p>}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>Return</span><span class=err>
+</span></span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://hattomo.github.io/tags/windows/>windows</a></li><li><a href=https://hattomo.github.io/tags/app/>app</a></li></ul><nav class=paginav><a class=prev href=https://hattomo.github.io/posts/main/21/q1/0227-management-1/><span class=title>« Next</span><br><span>経営工学についてのメモ1</span></a>
 <a class=next href=https://hattomo.github.io/posts/main/21/q1/0215-karabiner-office/><span class=title>Prev »</span><br><span>macOSのOfficeでEmacsキーバインド</span></a></nav></footer></article></main><footer class=footer><span><a href=general/about_site/>2023 Hattomo</a></span>
 <span>&#183;</span>
 <span><a href=https://hattomo.github.io/general/privacypolicy>Privacy Policy</a></span>
