@@ -22,14 +22,5 @@
       <description>PythonでLINEトークの履歴を解析し、グラフを生成する</description>
     </item>
     
-    <item>
-      <title>Useful Python commands</title>
-      <link>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</link>
-      <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</guid>
-      <description>Memolize Python useful tools</description>
-    </item>
-    
   </channel>
 </rss>

@@ -80,15 +80,6 @@ Design I focus on things below to build this websites.
     </item>
     
     <item>
-      <title>ダイソーで完全ワイヤレスイヤホンとACアダプターを買った</title>
-      <link>https://hattomo.github.io/posts/main/21/q4/1024-daiso-tws-earphone-and-ac-adaptor-review/jp/</link>
-      <pubDate>Sun, 31 Oct 2021 14:10:02 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/main/21/q4/1024-daiso-tws-earphone-and-ac-adaptor-review/jp/</guid>
-      <description>ダイソーで完全ワイヤレスイヤホンとACアダプターを買ったのでレビューした</description>
-    </item>
-    
-    <item>
       <title>Vigoole SSD Enclosure Review</title>
       <link>https://hattomo.github.io/posts/main/21/q4/1016-vigoole-ssd-enclosure-review/</link>
       <pubDate>Sat, 16 Oct 2021 10:50:05 +0000</pubDate>
@@ -134,15 +125,6 @@ Design I focus on things below to build this websites.
     </item>
     
     <item>
-      <title>Useful Docker Commands</title>
-      <link>https://hattomo.github.io/posts/main/21/q1/0325-docker-commands/</link>
-      <pubDate>Thu, 25 Mar 2021 15:10:58 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/main/21/q1/0325-docker-commands/</guid>
-      <description>Useful Docker Commands</description>
-    </item>
-    
-    <item>
       <title>Chrome Extensionでメディアコントローラーを作る</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0313-chrome-extension/</link>
       <pubDate>Sat, 13 Mar 2021 13:04:08 +0900</pubDate>
@@ -170,12 +152,12 @@ Design I focus on things below to build this websites.
     </item>
     
     <item>
-      <title>経営工学についてのメモ1</title>
-      <link>https://hattomo.github.io/posts/main/21/q1/0227-management-1/</link>
-      <pubDate>Mon, 01 Mar 2021 00:13:52 +0900</pubDate>
+      <title>自作OS 0 環境構築</title>
+      <link>https://hattomo.github.io/posts/main/21/q1/0223-rust-v-os/</link>
+      <pubDate>Tue, 23 Feb 2021 13:53:51 +0900</pubDate>
       
-      <guid>https://hattomo.github.io/posts/main/21/q1/0227-management-1/</guid>
-      <description>経営について学んだことのメモです。企業経営の基本的なとこです。</description>
+      <guid>https://hattomo.github.io/posts/main/21/q1/0223-rust-v-os/</guid>
+      <description>Desc Text.</description>
     </item>
     
     <item>
@@ -266,15 +248,6 @@ Design I focus on things below to build this websites.
       
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-vscode-default-font/</guid>
       <description>VSCodeのデフォルトのフォントはOSごとに何が設定されているか調査する</description>
-    </item>
-    
-    <item>
-      <title>Useful Python commands</title>
-      <link>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</link>
-      <pubDate>Wed, 10 Feb 2021 00:48:03 +0900</pubDate>
-      
-      <guid>https://hattomo.github.io/posts/main/21/q1/0210-python-commands/</guid>
-      <description>Memolize Python useful tools</description>
     </item>
     
     <item>
