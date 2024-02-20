@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>flutter on Hattomo</title>
+    <title>Flutter on Hattomo</title>
     <link>https://hattomo.github.io/tags/flutter/</link>
-    <description>Recent content in flutter on Hattomo</description>
+    <description>Recent content in Flutter on Hattomo</description>
     <image>
       <title>Hattomo</title>
       <url>https://raw.githubusercontent.com/Hattomo/blog-image/main/general/ogp/ogp.png</url>

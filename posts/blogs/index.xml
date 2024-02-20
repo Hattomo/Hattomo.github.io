@@ -11,6 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>[2023 Hattomo](general/about_site/)</copyright><atom:link href="https://hattomo.github.io/posts/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>[2023 Hattomo](general/about_site/)</copyright>
+    <lastBuildDate>Wed, 25 Aug 2021 20:15:41 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/posts/blogs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
