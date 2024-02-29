@@ -12,24 +12,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Sat, 13 Feb 2021 05:18:27 +0000</lastBuildDate><atom:link href="https://hattomo.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 07:08:36 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub CodespacesでHugoを利用したブログを書く</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
       <description>GitHub Codespaces is all new way to coding, I tried it to write hugo blog and it was great exprience.</description>
     </item>
-    
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
-    
   </channel>
 </rss>

@@ -12,60 +12,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Sun, 14 Feb 2021 23:11:34 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 07:08:36 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoで読了時間や文字数表示がおかしい</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0214-hugo-reading-time/</link>
       <pubDate>Sun, 14 Feb 2021 23:11:34 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0214-hugo-reading-time/</guid>
       <description>Hugoで読了時間や文字数表示がおかしい場合の対処法</description>
     </item>
-    
     <item>
       <title>シェルでHugoのポストを新規作成する</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</link>
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</guid>
       <description>hugoのポストをシェルで新規作成する方法</description>
     </item>
-    
     <item>
       <title>GitHub CodespacesでHugoを利用したブログを書く</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</link>
       <pubDate>Sat, 13 Feb 2021 05:18:27 +0000</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-how-to-use-hugo-in-github-codespaces/</guid>
       <description>GitHub Codespaces is all new way to coding, I tried it to write hugo blog and it was great exprience.</description>
     </item>
-    
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
-    
     <item>
       <title>HugoでGoogle Analytics 4を利用する</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-new-google-analytics-4/</link>
       <pubDate>Sat, 13 Feb 2021 11:48:30 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-new-google-analytics-4/</guid>
       <description>Hugoで新しくなったGoogleAnalyticsを使う</description>
     </item>
-    
     <item>
       <title>How to install and use Hugo</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0127-how-to-use-hugo/</link>
       <pubDate>Wed, 27 Jan 2021 13:33:06 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0127-how-to-use-hugo/</guid>
       <description>Hugoを利用する際の忘備録</description>
     </item>
-    
   </channel>
 </rss>

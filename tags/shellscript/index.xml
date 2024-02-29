@@ -12,15 +12,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Sat, 13 Feb 2021 18:47:00 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/shellscript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 11:58:23 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/tags/shellscript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>シェルでHugoのポストを新規作成する</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</link>
       <pubDate>Sat, 13 Feb 2021 18:47:00 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-new-post/</guid>
       <description>hugoのポストをシェルで新規作成する方法</description>
     </item>
-    
   </channel>
 </rss>

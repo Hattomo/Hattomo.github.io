@@ -12,15 +12,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Sat, 20 May 2023 00:45:16 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jul 2023 22:24:32 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer</title>
       <link>https://hattomo.github.io/categories/computer/</link>
       <pubDate>Sat, 20 May 2023 00:45:16 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/categories/computer/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

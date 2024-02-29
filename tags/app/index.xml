@@ -12,24 +12,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Tue, 23 Feb 2021 11:05:19 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 May 2021 23:13:24 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Auto HotkeyでMac風キーバインド！</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0223-autohotkey-mac/</link>
       <pubDate>Tue, 23 Feb 2021 11:05:19 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0223-autohotkey-mac/</guid>
       <description>WindowsでmacOS風のキーバインドや便利なショートカットの設定をAutoHotKeyを利用して設定する方法</description>
     </item>
-    
     <item>
       <title>macOSのOfficeでEmacsキーバインド</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0215-karabiner-office/</link>
       <pubDate>Mon, 15 Feb 2021 16:47:52 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0215-karabiner-office/</guid>
       <description>macOSのMicrosoft OfficeでEmacs風キーバインドを設定する</description>
     </item>
-    
   </channel>
 </rss>

@@ -12,15 +12,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[2023 Hattomo](general/about_site/)</copyright>
-    <lastBuildDate>Sat, 13 Feb 2021 12:46:03 +0900</lastBuildDate><atom:link href="https://hattomo.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 00:16:09 +0900</lastBuildDate>
+    <atom:link href="https://hattomo.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでLastmodが同一時刻になる</title>
       <link>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</link>
       <pubDate>Sat, 13 Feb 2021 12:46:03 +0900</pubDate>
-      
       <guid>https://hattomo.github.io/posts/main/21/q1/0213-github-actions-hugo-lastmod/</guid>
       <description>LastmodがGitHub Actionで同一時刻になる</description>
     </item>
-    
   </channel>
 </rss>
