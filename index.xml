@@ -19,18 +19,25 @@
       <link>https://hattomo.github.io/posts/main/23/q2/0519-icpram2023_portugal/jp/</link>
       <pubDate>Sat, 20 May 2023 00:45:16 +0900</pubDate>
       <guid>https://hattomo.github.io/posts/main/23/q2/0519-icpram2023_portugal/jp/</guid>
-      <description>はじめに PortugalのLisbonにて2月の22-24日にかけて開かれたICPRAM 2023に参加してきました。私にとって初めての海外&amp;</description>
+      <description>&lt;!--
+![alt](https://raw.githubusercontent.com/Hattomo/blog-image/main/posts/main/22/Q4/title/image.webp)
+--&gt;
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;PortugalのLisbonにて2月の22-24日にかけて開かれた&lt;a href=&#34;https://icpram.scitevents.org/?y=2023&#34;&gt;ICPRAM 2023&lt;/a&gt;に参加してきました。私にとって初めての海外&amp;amp;初めての現地参加の学会であり、学会そして海外の文化的な違いにふれられた、とても良い経験になりました。帰りは1人でありドイツに1泊しつつ帰ってきたことで海外旅行の自信もつきました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>About this websites</title>
       <link>https://hattomo.github.io/general/about_site/</link>
       <pubDate>Fri, 19 May 2023 18:38:52 +0900</pubDate>
       <guid>https://hattomo.github.io/general/about_site/</guid>
-      <description>About this websites This websites is a place to share and memorize what I have learned, experienced, and played in my life.
-Design I focus on things below to build this websites.
-😀Modern We will try to experiment with new technologies as much as possible on this page. For example, we currently use Avif as our image format.
-🦚Beautiful This websites has simple Beautiful light/dark mode UI. Enjoy!
-⚡Fast I belive fast loading is so important.</description>
+      <description>&lt;h2 id=&#34;about-this-websites&#34;&gt;About this websites&lt;/h2&gt;
+&lt;p&gt;This websites is a place to share and memorize what I have learned, experienced, and played in my life.&lt;/p&gt;
+&lt;h3 id=&#34;design&#34;&gt;Design&lt;/h3&gt;
+&lt;p&gt;I focus on things below to build this websites.&lt;/p&gt;
+&lt;h4 id=&#34;modern&#34;&gt;😀Modern&lt;/h4&gt;
+&lt;p&gt;We will try to experiment with new technologies as much as possible on this page. For example, we currently use &lt;code&gt;Avif&lt;/code&gt; as our image format.&lt;/p&gt;
+&lt;h4 id=&#34;beautiful&#34;&gt;🦚Beautiful&lt;/h4&gt;
+&lt;p&gt;This websites has simple Beautiful light/dark mode UI. Enjoy!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rakuten Moblieの2022Q3決算を見て黒字化を考える</title>
@@ -205,7 +212,8 @@ Design I focus on things below to build this websites.
       <link>https://hattomo.github.io/general/privacypolicy/</link>
       <pubDate>Wed, 27 Jan 2021 23:42:50 +0900</pubDate>
       <guid>https://hattomo.github.io/general/privacypolicy/</guid>
-      <description>アクセス解析ツールについて 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。 このGoogle</description>
+      <description>&lt;h2 id=&#34;アクセス解析ツールについて&#34;&gt;アクセス解析ツールについて&lt;/h2&gt;
+&lt;p&gt;当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to install and use Hugo</title>

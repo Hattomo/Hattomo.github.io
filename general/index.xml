@@ -19,18 +19,22 @@
       <link>https://hattomo.github.io/general/about_site/</link>
       <pubDate>Fri, 19 May 2023 18:38:52 +0900</pubDate>
       <guid>https://hattomo.github.io/general/about_site/</guid>
-      <description>About this websites This websites is a place to share and memorize what I have learned, experienced, and played in my life.
-Design I focus on things below to build this websites.
-😀Modern We will try to experiment with new technologies as much as possible on this page. For example, we currently use Avif as our image format.
-🦚Beautiful This websites has simple Beautiful light/dark mode UI. Enjoy!
-⚡Fast I belive fast loading is so important.</description>
+      <description>&lt;h2 id=&#34;about-this-websites&#34;&gt;About this websites&lt;/h2&gt;
+&lt;p&gt;This websites is a place to share and memorize what I have learned, experienced, and played in my life.&lt;/p&gt;
+&lt;h3 id=&#34;design&#34;&gt;Design&lt;/h3&gt;
+&lt;p&gt;I focus on things below to build this websites.&lt;/p&gt;
+&lt;h4 id=&#34;modern&#34;&gt;😀Modern&lt;/h4&gt;
+&lt;p&gt;We will try to experiment with new technologies as much as possible on this page. For example, we currently use &lt;code&gt;Avif&lt;/code&gt; as our image format.&lt;/p&gt;
+&lt;h4 id=&#34;beautiful&#34;&gt;🦚Beautiful&lt;/h4&gt;
+&lt;p&gt;This websites has simple Beautiful light/dark mode UI. Enjoy!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
       <link>https://hattomo.github.io/general/privacypolicy/</link>
       <pubDate>Wed, 27 Jan 2021 23:42:50 +0900</pubDate>
       <guid>https://hattomo.github.io/general/privacypolicy/</guid>
-      <description>アクセス解析ツールについて 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。 このGoogle</description>
+      <description>&lt;h2 id=&#34;アクセス解析ツールについて&#34;&gt;アクセス解析ツールについて&lt;/h2&gt;
+&lt;p&gt;当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
